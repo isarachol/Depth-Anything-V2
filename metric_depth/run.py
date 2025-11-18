@@ -7,6 +7,7 @@ import os
 import torch
 
 from depth_anything_v2.dpt import DepthAnythingV2
+from add_v_cbar import add_v_cbar
 
 
 if __name__ == '__main__':
@@ -57,25 +58,48 @@ if __name__ == '__main__':
         
         raw_image = cv2.imread(filename)
         
-        depth = depth_anything.infer_image(raw_image, args.input_size)
+        depth = depth_anything.infer_image(raw_image, args.input_size) # metric
         
+
         if args.save_numpy:
             output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '_raw_depth_meter.npy')
             np.save(output_path, depth)
         
+        # Isara: extract info
+        vmax = depth.max()
+        vmin = depth.min()
+        height, width = depth.shape
+
+        # Isara: For adding color bar and edges
+        edge_thickness = round(height/20)
+        cbar_width = round(width/15)
+        white_edge_v = np.ones((edge_thickness, width, 3), dtype=np.uint8) * 255
+        raw_image = cv2.vconcat([white_edge_v, raw_image, white_edge_v])
+
+        # make color relative
         depth = (depth - depth.min()) / (depth.max() - depth.min()) * 255.0
         depth = depth.astype(np.uint8)
         
         if args.grayscale:
-            depth = np.repeat(depth[..., np.newaxis], 3, axis=-1)
+            depth = np.repeat(depth[..., np.newaxis], 3, axis=-1) # repeat 3 layers --> grey scaled
+            v_cbar = add_v_cbar(None, vmax, vmin, cbar_width, height, edge_thickness)
         else:
             depth = (cmap(depth)[:, :, :3] * 255)[:, :, ::-1].astype(np.uint8)
+            v_cbar = add_v_cbar(cmap, vmax, vmin, cbar_width, height, edge_thickness)
         
+        # Isara: add edges and color bar
+        depth = cv2.vconcat([white_edge_v, depth, white_edge_v])
+        split_region = np.ones((raw_image.shape[0], 50, 3), dtype=np.uint8) * 255
+        depth = cv2.hconcat([depth, split_region, v_cbar])
+        # Isara: for edges along width direction
+        white_edge_h = np.ones((height+2*edge_thickness, edge_thickness, 3), dtype=np.uint8) * 255
+
         output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '.png')
         if args.pred_only:
+            depth = cv2.hconcat([white_edge_h, depth, white_edge_h]) # Isara
             cv2.imwrite(output_path, depth)
         else:
             split_region = np.ones((raw_image.shape[0], 50, 3), dtype=np.uint8) * 255
-            combined_result = cv2.hconcat([raw_image, split_region, depth])
+            combined_result = cv2.hconcat([white_edge_h, raw_image, split_region, depth, white_edge_h]) # Isara added w_edge
             
             cv2.imwrite(output_path, combined_result)
