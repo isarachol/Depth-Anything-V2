@@ -21,11 +21,11 @@ def get_all_file_paths(read_dir):
     return file_paths
 
 dataset = "HyperSim"
-datasubset = "split_test"   # "ai_001_001", "ai_001_002", "split_test", "preview"            
+datasubset = "ai_001_001"   # "ai_001_001", "ai_001_002", "split_test", "preview"            
 target_dir = f"/projectnb/cs523aw/students/isara/software/DepthDatasets/{dataset}/all/{datasubset}"
 all_data_paths = get_all_file_paths(target_dir)
 
-dataset_text_path = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/{datasubset}"
+dataset_text_path = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/"
 train_filename = "train.txt"
 test_filename = "val.txt"
 train_txt_path = os.path.join(dataset_text_path, train_filename)
@@ -49,5 +49,8 @@ with open(train_txt_path, 'w') as file:
 with open(test_txt_path, 'w') as file:
     for path in test_paths:
         file.write(f"{path}\n")
+
+print(f"Train: {len(train_paths)} = {len(train_paths)/len(all_data_paths)*100:.2f}%")
+print(f"Test: {len(test_paths)} = {len(test_paths)/len(all_data_paths)*100:.2f}%")
 
 
