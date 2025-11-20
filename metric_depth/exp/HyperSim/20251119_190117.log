@@ -1,0 +1,197 @@
+/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py:207: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  main()
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+xFormers not available
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+    
+main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 216, in <module>
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 51, in main
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+    rank, world_size = setup_distributed(port=args.port)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/util/dist_helper.py", line 34, in setup_distributed
+    torch.cuda.set_device(rank % num_gpus)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/cuda/__init__.py", line 567, in set_device
+    torch._C._cuda_setDevice(device)
+torch.AcceleratorError: CUDA error: CUDA-capable device(s) is/are busy or unavailable
+Search for `cudaErrorDevicesUnavailable' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+W1119 19:01:24.123000 2025803 site-packages/torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2025845 closing signal SIGTERM
+W1119 19:01:24.123000 2025803 site-packages/torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2025846 closing signal SIGTERM
+W1119 19:01:24.124000 2025803 site-packages/torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2025847 closing signal SIGTERM
+W1119 19:01:24.124000 2025803 site-packages/torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2025851 closing signal SIGTERM
+E1119 19:01:24.203000 2025803 site-packages/torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 3 (pid: 2025848) of binary: /projectnb/cs523aw/students/isara/software/dav2/bin/python3
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 207, in <module>
+    main()
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/typing_extensions.py", line 2956, in wrapper
+    return arg(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 203, in main
+    launch(args)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 188, in launch
+    run(args)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-19_19:01:24
+  host      : scc-202.scc.bu.edu
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 2025849)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-11-19_19:01:24
+  host      : scc-202.scc.bu.edu
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 2025850)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-11-19_19:01:24
+  host      : scc-202.scc.bu.edu
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 2025852)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-19_19:01:24
+  host      : scc-202.scc.bu.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 2025848)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
