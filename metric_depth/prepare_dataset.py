@@ -9,64 +9,56 @@ Created on Wed Nov 19 16:27:54 2025
 import os
 from sklearn.model_selection import train_test_split
 
-def get_all_file_paths(target_dir):
+def get_all_file_paths(feature_dir, label_dir, label_type):
     """
-    Return a list of X,Y
+    Return a list of pair of (X,Y)
     """    
-    feature_paths = []
-    label_paths = []
-    for (root,_,files) in os.walk(target_dir):
-        # print(root)
+    data_paths = []
+    for (_,_,files) in os.walk(feature_dir):
         for file in files:
-            # print(file)
-            f_path = os.path.join(root, file) # just string concat
-            # l_path = os.path.join(root, )
-            feature_paths.append(f_path)
-    return feature_paths
-
-# def get_all_file_paths(read_dir):
-#     """
-#     Return a list of absolute paths to all files in dir(ectory)
-#     """
-#     file_paths = []
-#     for (root, _, files) in os.walk(read_dir):
-#         for file in files:
-#             abs_path = os.path.join(root, file) # just string concat
-#             file_paths.append(abs_path)
-#     return file_paths
+            x_path = os.path.join(feature_dir, file) # just string concat
+            label_file = file[0:11]+label_type # frame.####.(label_type)
+            y_path = os.path.join(label_dir, label_file)
+            if os.path.exists(y_path):
+                line_path = x_path + " " + y_path
+                data_paths.append(line_path)
+            else:
+                print("y_path doesn't exist!")
+    return data_paths
 
 dataset = "HyperSim"
-datasubset = "ai_001_001"   # "ai_001_001", "ai_001_002", "split_test", "preview"            
-target_dir = f"/projectnb/cs523aw/students/isara/software/DepthDatasets/{dataset}/all/{datasubset}"
-all_data_paths = get_all_file_paths(target_dir)
+datasubset = "ai_001_001"   # "ai_001_001", "ai_001_002", "split_test"           
+dataset_dir = f"/projectnb/cs523aw/students/isara/software/DepthDatasets/{dataset}/all/{datasubset}/images"
+feature_dir = f"{dataset_dir}/scene_cam_00_final_preview"
+label_dir = f"{dataset_dir}/scene_cam_00_geometry_hdf5"
+label_type = "depth_meters.hdf5"
 
-for data in all_data_paths:
-    print(data)
+all_dataset = get_all_file_paths(feature_dir, label_dir, label_type)
 
-# dataset_text_path = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/{datasubset}"
-# train_filename = "train.txt"
-# test_filename = "val.txt"
-# train_txt_path = os.path.join(dataset_text_path, train_filename)
-# test_txt_path = os.path.join(dataset_text_path, test_filename)
+save_dir = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/{datasubset}"
+train_filename = "train.txt"
+test_filename = "val.txt"
+train_path = os.path.join(save_dir, train_filename)
+test_path = os.path.join(save_dir, test_filename)
 
-# save_all = False
-# if save_all:
-#     all_filename = "all.txt"
-#     all_path = os.path.join(dataset_text_path, all_filename)
+save_all = False
+if save_all:
+    all_filename = "all.txt"
+    all_path = os.path.join(save_dir, all_filename)
 
-#     with open(all_path, 'w') as file:
-#         for path in all_data_paths:
-#             file.write(f"{path}\n") if i%2==1 else file.write(f"{path}\t")
+    with open(all_path, 'w') as file:
+        for path in all_dataset:
+            file.write(f"{path}\n")
 
-# train_paths, test_paths = train_test_split(all_data_paths, test_size=0.2)
+train_set, test_set = train_test_split(all_dataset, test_size=0.2)
 
-# with open(train_txt_path, 'w') as file:
-#     for i, path in enumerate(train_paths):
-#         file.write(f"{path}\n") if i%2==1 else file.write(f"{path}\t")
+with open(train_path, 'w') as file:
+    for path in train_set:
+        file.write(f"{path}\n")
         
-# with open(test_txt_path, 'w') as file:
-#     for path in test_paths:
-#         file.write(f"{path}\n") if i%2==1 else file.write(f"{path}\t")
+with open(test_path, 'w') as file:
+    for path in test_set:
+        file.write(f"{path}\n")
 
 # print(f"Train: {len(train_paths)} = {len(train_paths)/len(all_data_paths)*100:.2f}%")
 # print(f"Test: {len(test_paths)} = {len(test_paths)/len(all_data_paths)*100:.2f}%")

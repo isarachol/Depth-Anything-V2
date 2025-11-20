@@ -1,669 +1,177 @@
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0070.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0096.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0019.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0099.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0003.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0074.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0011.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0059.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0072.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0015.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0045.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0054.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0029.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0001.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0050.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0019.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0076.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0002.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0038.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0073.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0027.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0048.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0064.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0081.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0070.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0075.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0054.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0048.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0083.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0077.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0037.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0056.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0058.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0033.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0081.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0077.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0063.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0013.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0083.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0072.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0059.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0005.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0091.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0023.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0006.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0091.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0027.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0075.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0015.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0055.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0031.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0072.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0014.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0098.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0073.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0083.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0019.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0030.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0070.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0037.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0002.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0043.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0018.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0086.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0065.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0080.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0022.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0053.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0002.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0081.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0058.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0024.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0087.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0078.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0059.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0010.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0028.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0005.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0069.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0050.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0093.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0083.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0058.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0004.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0083.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0066.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0094.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0043.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0026.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0031.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0047.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0017.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0054.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0067.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0006.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0089.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0081.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0027.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0008.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0013.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0096.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0040.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0088.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0016.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0026.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0022.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0017.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0029.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0091.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0022.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0088.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0077.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0067.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0099.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0069.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0012.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0050.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0045.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0078.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0096.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0088.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0054.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0081.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0044.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0062.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0049.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0016.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0047.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0055.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0058.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0064.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0084.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0057.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0098.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0012.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0038.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0034.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0057.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0051.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0084.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0067.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0063.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0007.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0077.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0049.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0021.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0030.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0075.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0033.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0082.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0054.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0058.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0006.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0012.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0009.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0063.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0044.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0045.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0084.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0099.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0060.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0002.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0098.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0062.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0073.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0096.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0084.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0019.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0018.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0029.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0016.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0038.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0073.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0086.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0099.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0094.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0041.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0019.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0089.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0018.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0043.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0084.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0018.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0015.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0070.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0044.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0027.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0058.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0055.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0000.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0040.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0089.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0092.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0054.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0026.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0060.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0029.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0090.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0070.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0015.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0000.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0083.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0094.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0064.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0009.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0037.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0042.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0041.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0002.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0028.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0055.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0011.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0066.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0045.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0094.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0000.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0092.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0044.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0020.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0073.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0046.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0087.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0086.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0097.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0004.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0018.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0075.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0058.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0069.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0065.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0094.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0016.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0054.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0075.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0056.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0075.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0044.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0082.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0026.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0078.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0054.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0032.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0047.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0055.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0071.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0012.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0000.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0055.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0067.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0059.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0084.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0037.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0064.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0006.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0071.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0004.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0040.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0007.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0064.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0094.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0064.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0049.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0004.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0021.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0025.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0073.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0037.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0008.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0093.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0084.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0001.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0093.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0069.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0005.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0060.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0040.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0060.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0027.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0072.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0008.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0051.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0046.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0099.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0078.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0030.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0051.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0025.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0073.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0052.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0048.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0084.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0013.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0057.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0018.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0034.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0093.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0069.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0081.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0021.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0086.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0003.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0014.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0042.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0024.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0020.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0085.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0069.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0015.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0068.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0076.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0002.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0014.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0008.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0074.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0087.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0023.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0013.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0098.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0091.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0022.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0045.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0089.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0006.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0082.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0062.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0064.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0074.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0074.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0042.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0093.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0041.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0054.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0007.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0040.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0042.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0098.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0091.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0047.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0028.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0071.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0091.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0054.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0001.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/_detail/mesh/metadata_semantic_instance_bounding_box_object_aligned_2d_extents.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0033.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0004.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0015.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0002.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0027.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0058.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0059.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0088.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0080.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0074.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0033.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0005.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0057.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0037.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0013.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0016.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0073.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0067.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0075.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0085.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0025.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0063.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0017.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0030.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0062.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0038.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0066.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0051.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0071.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0011.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0017.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0045.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0087.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0029.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0069.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0033.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0016.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0091.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0011.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0052.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0069.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0097.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0055.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0088.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0090.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0087.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0038.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0079.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0009.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0040.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0044.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0041.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0041.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0090.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0010.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0067.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0058.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0029.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0056.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0047.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0072.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0033.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0092.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0028.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0081.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0027.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0041.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0010.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0001.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0068.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0046.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0013.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0008.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0030.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0025.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0062.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0042.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0063.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0016.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0001.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0048.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0067.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0073.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0089.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0006.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0006.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0052.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0025.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0075.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0034.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0035.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0021.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0091.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0003.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0095.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0063.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0029.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0015.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0040.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0011.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0015.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0030.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0049.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0018.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0090.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0016.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0087.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0046.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0069.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0068.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0089.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/_detail/cam_00/camera_keyframe_orientations.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0099.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0026.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0095.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0057.tex_coord.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0011.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0066.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0098.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0003.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0058.diffuse_reflectance.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0022.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0082.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0028.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0095.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.semantic.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0076.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0020.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0056.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0009.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0079.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0053.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0090.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0098.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0035.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0012.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0075.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0041.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0087.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0033.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0034.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0047.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0099.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0086.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0076.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0006.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0066.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0042.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0079.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0077.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0043.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0041.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0070.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0025.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0059.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0060.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0012.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0089.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0059.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0077.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0007.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0032.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0028.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0019.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0013.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0092.depth_meters.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0007.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0025.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0029.semantic_instance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0064.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0079.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0081.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0075.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0025.diff.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0098.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0040.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0091.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0053.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0002.tonemap.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0011.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0043.residual.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0058.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0037.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0097.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0093.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0032.diffuse_illumination.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0050.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.normal_bump_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0025.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0010.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0068.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0090.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0035.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0026.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0043.residual.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0020.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0029.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0000.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0017.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0070.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0028.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0011.non_lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.gamma.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0011.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0022.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0086.lambertian.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.position.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0082.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0014.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0035.normal_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0040.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0014.normal_bump_world.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0030.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0023.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0002.diffuse_illumination.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0034.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0073.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0084.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0069.normal_cam.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0077.normal_bump_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0020.color.jpg
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0054.normal_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0038.render_entity_id.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0086.semantic.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0025.render_entity_id.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0091.depth_meters.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0097.semantic_instance.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0024.normal_bump_cam.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0068.normal_world.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0032.diffuse_reflectance.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_preview/frame.0063.tex_coord.png
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_hdf5/frame.0083.color.hdf5
-/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.semantic_instance.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0086.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0086.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0087.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0087.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0042.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0042.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0023.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0046.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0020.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0020.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0024.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0023.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0012.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0012.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0050.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0020.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0020.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0055.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0055.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0090.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0072.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0072.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0027.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0027.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0047.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0047.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0072.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0072.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0019.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0019.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0022.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0082.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0082.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0088.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0088.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0010.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0010.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0063.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0063.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0050.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0050.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0056.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0056.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0054.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0054.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0018.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0018.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0080.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0070.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0070.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0072.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0072.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0080.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0065.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0065.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0057.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0057.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0037.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0037.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0001.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0001.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0060.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0060.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0096.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0097.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0097.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0002.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0002.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0095.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0095.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0073.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0073.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0021.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0001.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0001.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0024.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0066.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0066.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0068.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0068.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0023.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0028.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0028.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0082.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0082.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0053.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0071.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0071.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0003.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0080.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0057.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0057.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0083.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0083.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0017.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0017.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0024.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0081.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0081.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0005.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0005.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0013.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0013.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0013.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0013.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0067.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0067.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0057.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0057.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0021.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0080.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0080.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0014.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0024.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0024.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0095.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0095.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0076.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0022.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0018.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0018.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0005.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0005.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0086.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0086.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0053.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0002.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0002.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0008.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0054.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0054.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0048.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0048.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0099.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0099.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0064.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0064.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0041.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0041.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0083.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0083.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0098.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0098.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0049.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0049.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0078.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0078.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0043.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0043.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0084.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0037.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0037.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0093.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0093.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0011.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0011.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0014.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0014.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0055.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0055.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0015.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0015.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0074.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0074.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0088.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0088.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0010.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0010.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0093.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0093.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0083.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0083.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0065.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0065.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0076.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0076.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0016.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0016.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0056.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0056.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0011.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0011.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0091.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0091.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0062.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0062.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0052.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0052.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0032.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0032.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0001.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0001.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0084.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0084.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0033.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0033.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0090.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0090.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0086.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0086.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0032.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0032.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0027.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0027.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0017.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0017.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0096.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0044.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0044.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0097.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0097.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0008.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0003.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0003.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0016.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0016.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0022.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0022.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0097.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0097.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0034.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0034.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0038.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0053.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0053.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0016.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0016.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0048.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0048.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0015.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0015.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0041.residual.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0041.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0085.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0085.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0062.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0062.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0070.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0070.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0087.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0087.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0079.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0079.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0025.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0025.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0046.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0046.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0030.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0030.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0026.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0026.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0008.lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0008.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0020.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0020.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0071.color.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0071.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0021.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0021.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0029.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0029.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0023.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0023.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0004.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0004.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0091.diffuse_illumination.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0091.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0031.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0031.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0087.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0087.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0071.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0071.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0096.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0096.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0038.non_lambertian.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0038.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0066.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0066.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0094.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0094.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0011.tonemap.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0011.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0006.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0006.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0009.diffuse_reflectance.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0009.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0039.diff.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0039.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0013.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0013.depth_meters.hdf5
+/projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0035.gamma.jpg /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_geometry_hdf5/frame.0035.depth_meters.hdf5
