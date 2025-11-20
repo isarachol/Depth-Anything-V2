@@ -28,9 +28,9 @@ def setup_distributed(backend="nccl", port=None):
         os.environ["LOCAL_RANK"] = str(rank % num_gpus)
         os.environ["RANK"] = str(rank)
     else:
-        rank = int(os.environ["RANK"])
-        world_size = int(os.environ["WORLD_SIZE"])
-
+        rank = int(os.environ["RANK"]) if "RANK" in os.environ else 0 # Isara: if not distributed system
+        world_size = int(os.environ["WORLD_SIZE"]) if "WORLD_SIZE" in os.environ else 1 # Isara: if not distributed system
+        
     torch.cuda.set_device(rank % num_gpus)
 
     dist.init_process_group(

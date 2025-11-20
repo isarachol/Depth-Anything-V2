@@ -48,7 +48,9 @@ def main():
     logger = init_log('global', logging.INFO)
     logger.propagate = 0
     
+    print("Before setup_distributed")
     rank, world_size = setup_distributed(port=args.port)
+    print("After setup_distributed")
     
     if rank == 0:
         all_args = {**vars(args), 'ngpus': world_size}

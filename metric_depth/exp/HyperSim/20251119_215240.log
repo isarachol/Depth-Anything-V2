@@ -1,0 +1,95 @@
+/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py:207: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  main()
+xFormers not available
+xFormers not available
+Before setup_distributed
+After setup_distributed
+[2025-11-19 21:52:47,334][    INFO] {'bs': 4,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vitb',
+ 'epochs': 120,
+ 'img_size': 518,
+ 'local_rank': 0,
+ 'lr': 5e-06,
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 1,
+ 'port': 20596,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vitb.pth',
+ 'save_path': 'exp/HyperSim'}
+
+[2025-11-19 21:52:49,788][    INFO] ===========> Epoch: 0/120, d1: 0.000, d2: 0.000, d3: 0.000
+[2025-11-19 21:52:49,788][    INFO] ===========> Epoch: 0/120, abs_rel: 100.000, sq_rel: 100.000, rmse: 100.000, rmse_log: 100.000, log10: 100.000, silog: 100.000
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 218, in <module>
+[rank0]:     main()
+[rank0]:   File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/train.py", line 127, in main
+[rank0]:     for i, sample in enumerate(trainloader):
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 732, in __next__
+[rank0]:     data = self._next_data()
+[rank0]:            ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1506, in _next_data
+[rank0]:     return self._process_data(data, worker_id)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1541, in _process_data
+[rank0]:     data.reraise()
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/_utils.py", line 769, in reraise
+[rank0]:     raise exception
+[rank0]: IndexError: Caught IndexError in DataLoader worker process 0.
+[rank0]: Original Traceback (most recent call last):
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+[rank0]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank0]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank0]:             ~~~~~~~~~~~~^^^^^
+[rank0]:   File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/hypersim.py", line 52, in __getitem__
+[rank0]:     depth_path = self.filelist[item].split(' ')[1]
+[rank0]:                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+[rank0]: IndexError: list index out of range
+
+[rank0]:[W1119 21:52:50.824163054 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E1119 21:52:51.585000 781956 site-packages/torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 781964) of binary: /projectnb/cs523aw/students/isara/software/dav2/bin/python3
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 207, in <module>
+    main()
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/typing_extensions.py", line 2956, in wrapper
+    return arg(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 203, in main
+    launch(args)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launch.py", line 188, in launch
+    run(args)
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-19_21:52:51
+  host      : scc-204.scc.bu.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 781964)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
