@@ -210,7 +210,7 @@ def main():
                 'epoch': epoch,
                 'previous_best': previous_best,
             }
-            torch.save(checkpoint, os.path.join(args.save_path, 'latest.pth'))
+            torch.save(checkpoint, os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_v1.pth'))
 
 
 if __name__ == '__main__':

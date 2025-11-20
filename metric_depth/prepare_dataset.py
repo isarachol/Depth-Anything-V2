@@ -27,7 +27,7 @@ def get_all_file_paths(feature_dir, label_dir, label_type):
     return data_paths
 
 dataset = "HyperSim"
-datasubset = "ai_001_001"   # "ai_001_001", "ai_001_002", "split_test"           
+datasubset = "split_test"   # "ai_001_001", "ai_001_002", "split_test"           
 dataset_dir = f"/projectnb/cs523aw/students/isara/software/DepthDatasets/{dataset}/all/{datasubset}/images"
 feature_dir = f"{dataset_dir}/scene_cam_00_final_preview"
 label_dir = f"{dataset_dir}/scene_cam_00_geometry_hdf5"
@@ -37,8 +37,10 @@ all_dataset = get_all_file_paths(feature_dir, label_dir, label_type)
 
 save_dir = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/{datasubset}"
 train_filename = "train.txt"
-test_filename = "val.txt"
+val_filename = "val.txt"
+test_filename = "test.txt"
 train_path = os.path.join(save_dir, train_filename)
+val_path = os.path.join(save_dir, val_filename)
 test_path = os.path.join(save_dir, test_filename)
 
 save_all = False
@@ -50,17 +52,22 @@ if save_all:
         for path in all_dataset:
             file.write(f"{path}\n")
 
-train_set, test_set = train_test_split(all_dataset, test_size=0.2)
+# split data into train, val, test
+train_set, test_set = train_test_split(all_dataset, test_size=0.2) #test 20%
+train_set, val_set = train_test_split(train_set, test_size=0.125) #val 10%
 
+# save them
 with open(train_path, 'w') as file:
     for path in train_set:
         file.write(f"{path}\n")
-        
+
+with open(val_path, 'w') as file:
+    for path in val_set:
+        file.write(f"{path}\n")
+
 with open(test_path, 'w') as file:
     for path in test_set:
         file.write(f"{path}\n")
 
 # print(f"Train: {len(train_paths)} = {len(train_paths)/len(all_data_paths)*100:.2f}%")
 # print(f"Test: {len(test_paths)} = {len(test_paths)/len(all_data_paths)*100:.2f}%")
-
-
