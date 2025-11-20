@@ -64,7 +64,7 @@ class Hypersim(Dataset):
         sample['depth'] = torch.from_numpy(sample['depth'])
         
         sample['valid_mask'] = (torch.isnan(sample['depth']) == 0)
-        sample['depth'][sample['valid_mask'] == 0] = 0
+        sample['depth'][sample['valid_mask'] == 0] = 0 # if depth is_nan, change to 0
         
         sample['image_path'] = self.filelist[item].split(' ')[0]
         

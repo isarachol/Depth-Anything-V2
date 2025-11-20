@@ -48,9 +48,8 @@ def main():
     logger = init_log('global', logging.INFO)
     logger.propagate = 0
     
-    print("Before setup_distributed")
     rank, world_size = setup_distributed(port=args.port)
-    print("After setup_distributed")
+    print(f"RANK = {rank}")
     
     if rank == 0:
         all_args = {**vars(args), 'ngpus': world_size}
@@ -129,12 +128,12 @@ def main():
             
             img, depth, valid_mask = sample['image'].cuda(), sample['depth'].cuda(), sample['valid_mask'].cuda()
             
-            if random.random() < 0.5:
+            if random.random() < 0.5: # randomly flip? 50% & flipped and 50% not
                 img = img.flip(-1)
                 depth = depth.flip(-1)
                 valid_mask = valid_mask.flip(-1)
             
-            pred = model(img)
+            pred = model(img) # similar to model.forward(img) BUT with forward hooks and toerh stuff
             
             loss = criterion(pred, depth, (valid_mask == 1) & (depth >= args.min_depth) & (depth <= args.max_depth))
             
@@ -150,7 +149,7 @@ def main():
             optimizer.param_groups[0]["lr"] = lr
             optimizer.param_groups[1]["lr"] = lr * 10.0
             
-            if rank == 0:
+            if rank == 0: # if no gpu?
                 writer.add_scalar('train/loss', loss.item(), iters)
             
             if rank == 0 and i % 100 == 0:
@@ -176,7 +175,7 @@ def main():
             if valid_mask.sum() < 10:
                 continue
             
-            cur_results = eval_depth(pred[valid_mask], depth[valid_mask])
+            cur_results = eval_depth(pred[valid_mask], depth[valid_mask]) # evaluate with metrics
             
             for k in results.keys():
                 results[k] += cur_results[k]
