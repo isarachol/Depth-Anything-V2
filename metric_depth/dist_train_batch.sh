@@ -8,7 +8,7 @@
 #$ -l mem_per_core=16G
 #$ -l gpus=1
 #$ -l gpu_c=6.0
-#$ -l gpu_memory=24G
+#$ -l gpu_memory=16G
 
 
 # prepare environment
