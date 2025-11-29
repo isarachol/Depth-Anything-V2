@@ -5,12 +5,16 @@ import matplotlib
 import numpy as np
 import os
 import torch
+import time
+import cProfile
+import pstats
 
 from depth_anything_v2.dpt import DepthAnythingV2
 from add_v_cbar import add_v_cbar
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description='Depth Anything V2 Metric Depth Estimation')
     
     parser.add_argument('--img-path', type=str)
@@ -37,7 +41,19 @@ if __name__ == '__main__':
     }
     
     depth_anything = DepthAnythingV2(**{**model_configs[args.encoder], 'max_depth': args.max_depth})
-    depth_anything.load_state_dict(torch.load(args.load_from, map_location='cpu'))
+
+    # extract state dict from pre trained model
+    if 'checkpoints' in args.load_from:
+        new_state_dict = torch.load(args.load_from, map_location='cpu')
+    else:
+        pretrained_state_dict = torch.load(args.load_from, map_location='cpu')['model']
+        new_state_dict = {}
+
+        for key, val in pretrained_state_dict.items():
+            new_key = key.replace("module.", "", 1)
+            new_state_dict[new_key] = val
+
+    depth_anything.load_state_dict(new_state_dict) # added ['model']
     depth_anything = depth_anything.to(DEVICE).eval()
     
     if os.path.isfile(args.img_path):
@@ -53,13 +69,17 @@ if __name__ == '__main__':
     
     cmap = matplotlib.colormaps.get_cmap('Spectral')
     
+    # start_t = time.time()
+    elapsed_t = 0
     for k, filename in enumerate(filenames):
         print(f'Progress {k+1}/{len(filenames)}: {filename}')
         
         raw_image = cv2.imread(filename)
         
+        start_t = time.time()
         depth = depth_anything.infer_image(raw_image, args.input_size) # metric
-        
+        end_t = time.time()
+        elapsed_t += end_t - start_t
 
         if args.save_numpy:
             output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '_raw_depth_meter.npy')
@@ -103,3 +123,12 @@ if __name__ == '__main__':
             combined_result = cv2.hconcat([white_edge_h, raw_image, split_region, depth, white_edge_h]) # Isara added w_edge
             
             cv2.imwrite(output_path, combined_result)
+    end_t = time.time()
+    # elapsed_t += end_t - start_t
+    print(f'Inferring depth of {len(filenames)} images in {elapsed_t:.2f} sec = {elapsed_t/len(filenames):.2f} s/img')
+
+if __name__ == '__main__':
+    cProfile.run('main()', 'profile_results.prof')
+
+    stats = pstats.Stats('profile_results.prof')
+    stats.sort_stats('time').print_stats(10)
