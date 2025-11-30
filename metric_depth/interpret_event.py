@@ -28,6 +28,9 @@ for key in keys:
     x[key] = [e.value for e in scalar_events]
     plt.plot(step, x[key])
     
+plt.xlabel("Step (0-119)")
+plt.ylabel("Value")
+plt.legend(keys, loc='upper right', bbox_to_anchor=(1, 0.9))
 plt.show()
     
     # for event in scalar_events:
