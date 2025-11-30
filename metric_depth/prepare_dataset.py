@@ -27,13 +27,20 @@ def get_all_file_paths(feature_dir, label_dir, label_type):
     return data_paths
 
 dataset = "HyperSim"
-datasubset = "split_test"   # "ai_001_001", "ai_001_002", "split_test"           
+datasubset = "ai_003_009"   # "ai_001_001", "ai_001_002", "split_test", "ai_003_009"           
 dataset_dir = f"/projectnb/cs523aw/students/isara/software/DepthDatasets/{dataset}/all/{datasubset}/images"
-feature_dir = f"{dataset_dir}/scene_cam_00_final_preview"
-label_dir = f"{dataset_dir}/scene_cam_00_geometry_hdf5"
+feature_dir = f"{dataset_dir}/scene_cam_00_final_preview" # scene_cam_00_final_preview and scene_cam_01_final_preview
+label_dir = f"{dataset_dir}/scene_cam_00_geometry_hdf5" # scene_cam_00_geometry_hdf5 and scene_cam_01_geometry_hdf5
 label_type = "depth_meters.hdf5"
 
-all_dataset = get_all_file_paths(feature_dir, label_dir, label_type)
+all_dataset1 = get_all_file_paths(feature_dir, label_dir, label_type)
+
+feature_dir2 = f"{dataset_dir}/scene_cam_01_final_preview"
+label_dir2 = f"{dataset_dir}/scene_cam_01_geometry_hdf5"
+all_dataset2 = get_all_file_paths(feature_dir2, label_dir2, label_type)
+
+all_dataset = all_dataset1 + all_dataset2
+
 
 save_dir = f"/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/dataset/splits/{dataset}/{datasubset}"
 train_filename = "train.txt"
@@ -69,5 +76,8 @@ with open(test_path, 'w') as file:
     for path in test_set:
         file.write(f"{path}\n")
 
-# print(f"Train: {len(train_paths)} = {len(train_paths)/len(all_data_paths)*100:.2f}%")
-# print(f"Test: {len(test_paths)} = {len(test_paths)/len(all_data_paths)*100:.2f}%")
+print(f'{all_dataset[len(all_dataset)-1]}')
+print(f"All: {len(all_dataset)}")
+print(f"Train: {len(train_set)}")
+print(f"Val: {len(val_set)}")
+print(f"Test: {len(test_set)}")

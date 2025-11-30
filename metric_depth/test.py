@@ -119,8 +119,8 @@ def main():
     tot_time = end_tot_time - start_tot_time
     epoch = 1
 
-    logger.info(f'Performance of model from "{args.load_from}")
-    logger.info(f'Measured over "{nsamples}" samples of training data from "{args.dataset}" dataset')
+    logger.info(f'Performance of model from "{args.load_from}"')
+    logger.info(f'Measured over "{nsamples.item()}" samples of training data from "{args.dataset}" dataset')
 
     logger.info(f'Using "{DEVICE}"')
     logger.info(f'Total run time is {tot_time:.3f} s')

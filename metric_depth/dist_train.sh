@@ -5,13 +5,13 @@ epoch=120
 bs=4
 gpus=1
 lr=0.000005
-encoder=vitb
+encoder=vits
 dataset=HyperSim # hypersim vkitti
 img_size=518
 min_depth=0.001
 max_depth=20 # 80 for virtual kitti
 pretrained_from=../checkpoints/depth_anything_v2_${encoder}.pth
-save_path=exp/HyperSim/ai_001_001 # exp/vkitti
+save_path=exp/HyperSim/ai_003_009 # exp/vkitti
 
 mkdir -p $save_path
 
