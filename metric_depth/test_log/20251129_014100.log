@@ -1,0 +1,21 @@
+xFormers not available
+xFormers not available
+[2025-11-29 01:41:07,161][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vitb',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'exp/HyperSim/ai_001_001/vitb_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'exp/HyperSim/ai_001_001/test'}
+
+/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+[2025-11-29 01:58:07,261][    INFO] Tested with tensor([177.]) samples
+[2025-11-29 01:58:07,262][    INFO] Time is in seconds per sample (only for inference step)
+[2025-11-29 01:58:07,262][    INFO] ==================================================================================================
+[2025-11-29 01:58:07,262][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-11-29 01:58:07,262][    INFO]    0.994,    0.998,    0.999,    0.040,    0.008,    0.107,    0.049,    0.017,    0.042,    5.711
+[2025-11-29 01:58:07,262][    INFO] ==================================================================================================
+
