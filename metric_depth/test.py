@@ -25,6 +25,7 @@ from add_v_cbar import add_v_cbar
 
 # if __name__ == '__main__':
 def main():
+    start_tot_time = time.time()
     parser = argparse.ArgumentParser(description='Depth Anything V2 Metric Depth Estimation Test CPU Only')
     
     parser.add_argument('--input-size', type=int, default=518)
@@ -114,10 +115,17 @@ def main():
             results[k] += cur_results[k]
         nsamples += 1
     
+    end_tot_time = time.time()
+    tot_time = end_tot_time - start_tot_time
     epoch = 1
 
-    logger.info(f'Tested with {nsamples} samples')   
+    logger.info(f'Performance of model from "{args.load_from}")
+    logger.info(f'Measured over "{nsamples}" samples of training data from "{args.dataset}" dataset')
+
+    logger.info(f'Using "{DEVICE}"')
+    logger.info(f'Total run time is {tot_time:.3f} s')
     logger.info('Time is in seconds per sample (only for inference step)')
+    logger.info(' ')
 
     logger.info('==================================================================================================')
     logger.info('{:>8}, {:>8}, {:>8}, {:>8}, {:>8}, {:>8}, {:>8}, {:>8}, {:>8}, {:>8}'.format(*tuple(results.keys())))
