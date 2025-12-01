@@ -1,0 +1,26 @@
+xFormers not available
+xFormers not available
+[2025-11-30 19:20:45,503][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vitb',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'exp/HyperSim/ai_001_001/vitb_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_001_001/test_vitb'}
+
+cpu
+exp/HyperSim/ai_001_001/vitb_HyperSim_v1.pth
+<class 'dict'>
+[2025-11-30 20:00:15,172][    INFO] Performance of model from "exp/HyperSim/ai_001_001/vitb_HyperSim_v1.pth"
+[2025-11-30 20:00:15,172][    INFO] Measured over "360.0" samples of training data from "HyperSim" dataset
+[2025-11-30 20:00:15,172][    INFO] Using "cpu"
+[2025-11-30 20:00:15,172][    INFO] Total run time is 2369.670 s
+[2025-11-30 20:00:15,172][    INFO] Time is in seconds per sample (only for inference step)
+[2025-11-30 20:00:15,172][    INFO]  
+[2025-11-30 20:00:15,172][    INFO] ==================================================================================================
+[2025-11-30 20:00:15,172][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-11-30 20:00:15,172][    INFO]    0.011,    0.049,    0.251,    0.555,    2.168,    3.904,    0.861,    0.365,    0.623,    6.539
+[2025-11-30 20:00:15,172][    INFO] ==================================================================================================
+

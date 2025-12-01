@@ -1,0 +1,12 @@
+xFormers not available
+xFormers not available
+[2025-11-30 20:06:01,734][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_vits'}
+

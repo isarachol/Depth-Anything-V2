@@ -3,11 +3,11 @@
 checkpoint=1
 encoder="vits"
 dataset="HyperSim"
-subdataset="ai_003_009"
-save_path="exp/$dataset/$subdataset/test"
+subdataset="ai_003_009" # ai_001_001, ai_003_009
+save_path="test_log/$subdataset/test_$encoder"
 
-if [[ $checkpoint == 0 ]]; then
-    load_from="exp/$dataset/$subdataset/vits_HyperSim_v1.pth" # or "checkpoints/depth_anything_v2_metric_hypersim_vits.pth"
+if [[ $checkpoint != 1 ]]; then
+    load_from="exp/$dataset/$subdataset/${encoder}_HyperSim_v1.pth"
     log_name="$save_path/$(date +"%Y%m%d_%H%M%S").log"
 else
     load_from="checkpoints/depth_anything_v2_metric_hypersim_$encoder.pth"

@@ -62,8 +62,8 @@ def main():
     # testsampler = torch.utils.data.distributed.DistributedSampler(testset)
     testloader = DataLoader(testset, batch_size=1, pin_memory=True, num_workers=4, drop_last=True) #, sampler=testsampler)
     
-    DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
-    
+    DEVICE = 'cpu' #'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+
     model_configs = {
         'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
         'vitb': {'encoder': 'vitb', 'features': 128, 'out_channels': [96, 192, 384, 768]},

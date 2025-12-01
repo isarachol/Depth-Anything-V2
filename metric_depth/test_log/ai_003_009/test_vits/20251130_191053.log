@@ -1,0 +1,58 @@
+xFormers not available
+xFormers not available
+[2025-11-30 19:10:58,272][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_vits'}
+
+Traceback (most recent call last):
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/test.py", line 140, in <module>
+    main()
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/test.py", line 102, in main
+    pred = model(img)
+           ^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py", line 181, in forward
+    features = self.pretrained.get_intermediate_layers(x, self.intermediate_layer_idx[self.encoder], return_class_token=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 308, in get_intermediate_layers
+    outputs = self._get_intermediate_layers_not_chunked(x, n)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 272, in _get_intermediate_layers_not_chunked
+    x = self.prepare_tokens_with_masks(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 214, in prepare_tokens_with_masks
+    x = self.patch_embed(x)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr4/cs523aw/isara/depth_estimation/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/patch_embed.py", line 76, in forward
+    x = self.proj(x)  # B C H W
+        ^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cs523aw/students/isara/software/dav2/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (torch.FloatTensor) and weight type (torch.cuda.FloatTensor) should be the same or input should be a MKLDNN tensor and weight is a dense tensor
