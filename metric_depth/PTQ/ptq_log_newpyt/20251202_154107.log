@@ -1,0 +1,1012 @@
+xFormers not available
+xFormers not available
+[2025-12-02 15:41:08,596][    INFO] {'bs': 2,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'lr': 5e-06,
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log'}
+
+[2025-12-02 15:41:08,597][    INFO] Using "cpu"
+Device: "cpu"
+Size (full): 99.22 MB
+[2025-12-02 15:41:15,516][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 15:41:15,516][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 15:41:15,516][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 15:41:15,516][    INFO]  
+[2025-12-02 15:41:15,517][    INFO] ==================================================================================================
+[2025-12-02 15:41:15,517][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 15:41:15,517][    INFO]    0.997,    0.999,    1.000,    0.022,    0.005,    0.158,    0.037,    0.009,    0.036,    3.929
+[2025-12-02 15:41:15,517][    INFO] ==================================================================================================
+I1202 15:41:15.822000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] create_env
+I1202 15:41:16.323000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] produce_guards
+V1202 15:41:16.324000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[0] 2 None
+V1202 15:41:16.324000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[1] 3 None
+V1202 15:41:16.324000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[2] 518 None
+V1202 15:41:16.324000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[3] 686 None
+V1202 15:41:16.324000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[0] 1066044 None
+V1202 15:41:16.325000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[1] 355348 None
+V1202 15:41:16.325000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[2] 686 None
+V1202 15:41:16.325000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[3] 1 None
+V1202 15:41:16.325000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].storage_offset() 0 None
+V1202 15:41:16.580000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _is_skip_guard_eval_unsafe_stance (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py)
+V1202 15:41:16.580000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _wrapped_call_impl (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py)
+V1202 15:41:16.580000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _call_impl (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py)
+I1202 15:41:16.581000 39817 site-packages/torch/_dynamo/utils.py:1162] [0/0] ChromiumEventLogger initialized with id a5ea289b-6939-4d9f-a515-43208cdb250b
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     main()
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 207, in _move_exported_model_to_eval
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     _replace_dropout(model, train_to_eval=True)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 72, in _replace_dropout
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     match_pattern = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return _export_for_training(
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return fn(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return fn(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.581000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [0/0] 
+I1202 15:41:16.582000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [0/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.582000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [0/0] create_env
+V1202 15:41:16.584000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [0/0] wrap_to_fake L['args'][0] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.585000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [0/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.585000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [0/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.585000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [0/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.587000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.587000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.588000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.588000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=1)]
+V1202 15:41:16.588000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [0/0] INLINING <code object dropout_train at 0x7f81a8113730, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 64>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [0/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train (_replace_dropout.dropout_train) (inline depth: 1)
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [0/0] [__trace_source]                 return F.dropout(x, p=0.5, training=True, inplace=inplace)
+V1202 15:41:16.589000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.590000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_ATTR dropout [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.590000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>)]
+V1202 15:41:16.590000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_CONST 0.5 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable()]
+V1202 15:41:16.591000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_CONST True [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5)]
+V1202 15:41:16.591000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_DEREF inplace [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True)]
+V1202 15:41:16.591000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE LOAD_CONST ('p', 'training', 'inplace') [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True), ConstantVariable(bool: False)]
+V1202 15:41:16.591000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 4 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True), ConstantVariable(bool: False), TupleVariable(length=3)]
+V1202 15:41:16.598000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.598000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [0/0] DONE INLINING <code object dropout_train at 0x7f81a8113730, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 64>
+V1202 15:41:16.598000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [0/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.598000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [0/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.598000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [0/0] RETURN_VALUE triggered compile
+V1202 15:41:16.598000 39817 site-packages/torch/_dynamo/output_graph.py:972] [0/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]  ===== __compiled_fn_1 =====
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]     def forward(self, L_args_0_: "f32[1][1]cpu"):
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]         
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train, code: return F.dropout(x, p=0.5, training=True, inplace=inplace)
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]         dropout: "f32[1][1]cpu" = torch.nn.functional.dropout(l_args_0_, p = 0.5, training = True, inplace = False);  l_args_0_ = None
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]         return (dropout,)
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code]         
+V1202 15:41:16.599000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [0/0] [__graph_code] 
+I1202 15:41:16.600000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [0/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.600000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [0/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.603000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [0/0] produce_guards
+V1202 15:41:16.603000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [0/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.603000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [0/0] track_symint L['args'][0].stride()[0] 1 None
+V1202 15:41:16.603000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [0/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.604000 39817 site-packages/torch/_dynamo/guards.py:2364] [0/0] [__guards] GUARDS:
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] 
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] +- RootGuardManager
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 1                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200162150336)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847209264)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__closure__, accessed_by=GetAttrGuardAccessor(__closure__)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | | +- GuardManager: source=L['self'].fn.__closure__[0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | | | +- GuardManager: source=L['self'].fn.__closure__[0].cell_contents, accessed_by=GetAttrGuardAccessor(cell_contents)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__closure__[0].cell_contents, 108978043860672)  # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.dropout(x, p=0.5, training=True, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:65 in dropout_train
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | +- GuardManager: source=G['F'].dropout, accessed_by=GetAttrGuardAccessor(dropout)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].dropout, 140194860993120)              # return F.dropout(x, p=0.5, training=True, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:65 in dropout_train
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 1  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.605000 39817 site-packages/torch/_dynamo/guards.py:2321] [0/0] [__guards] 
+I1202 15:41:16.605000 39817 site-packages/torch/_dynamo/pgo.py:636] [0/0] put_code_state: no cache key, skipping
+V1202 15:41:16.608000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _fn (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py)
+V1202 15:41:16.608000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _callback_from_stance (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py)
+V1202 15:41:16.608000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: _maybe_set_eval_frame (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py)
+V1202 15:41:16.608000 39817 site-packages/torch/_dynamo/convert_frame.py:1345] skipping: justknobs_check (reason: in skipfiles, file: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_utils_internal.py)
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train, code: return F.dropout(x, p=0.5, training=True, inplace=inplace)[0m
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         dropout: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.dropout(l_args_0_, p = [34m0.5[0m, training = [34mTrue[0m, inplace = [34mFalse[0m);  [2ml_args_0_ = None[0m
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (dropout,)
+I1202 15:41:16.609000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     main()
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 207, in _move_exported_model_to_eval
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     _replace_dropout(model, train_to_eval=True)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 77, in _replace_dropout
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     replacement_pattern = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return _export_for_training(
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return fn(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return fn(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.617000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [1/0] 
+I1202 15:41:16.617000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [1/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.618000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [1/0] create_env
+V1202 15:41:16.618000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [1/0] wrap_to_fake L['args'][0] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.619000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [1/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.619000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [1/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.619000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [1/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.619000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.619000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=1)]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.620000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [1/0] INLINING <code object dropout_eval at 0x7f81a8113c00, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 67>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [1/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval (_replace_dropout.dropout_eval) (inline depth: 1)
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [1/0] [__trace_source]                 return F.dropout(x, p=0.5, training=False, inplace=inplace)
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_ATTR dropout [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>)]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_CONST 0.5 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable()]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_CONST False [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5)]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_DEREF inplace [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False)]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE LOAD_CONST ('p', 'training', 'inplace') [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False), ConstantVariable(bool: False)]
+V1202 15:41:16.621000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 4 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False), ConstantVariable(bool: False), TupleVariable(length=3)]
+V1202 15:41:16.622000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.622000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [1/0] DONE INLINING <code object dropout_eval at 0x7f81a8113c00, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 67>
+V1202 15:41:16.622000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [1/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.622000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [1/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [1/0] RETURN_VALUE triggered compile
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:972] [1/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]  ===== __compiled_fn_3 =====
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]     def forward(self, L_args_0_: "f32[1][1]cpu"):
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]         
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval, code: return F.dropout(x, p=0.5, training=False, inplace=inplace)
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]         dropout: "f32[1][1]cpu" = torch.nn.functional.dropout(l_args_0_, p = 0.5, training = False, inplace = False);  l_args_0_ = None
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]         return (dropout,)
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code]         
+V1202 15:41:16.623000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [1/0] [__graph_code] 
+I1202 15:41:16.624000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [1/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.624000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [1/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.626000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [1/0] produce_guards
+V1202 15:41:16.626000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [1/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.626000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [1/0] track_symint L['args'][0].stride()[0] 1 None
+V1202 15:41:16.626000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [1/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2364] [1/0] [__guards] GUARDS:
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] 
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] +- RootGuardManager
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 1                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200163799536)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847210496)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__closure__, accessed_by=GetAttrGuardAccessor(__closure__)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | | +- GuardManager: source=L['self'].fn.__closure__[0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | | | +- GuardManager: source=L['self'].fn.__closure__[0].cell_contents, accessed_by=GetAttrGuardAccessor(cell_contents)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__closure__[0].cell_contents, 108978043860672)  # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.dropout(x, p=0.5, training=False, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:68 in dropout_eval
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | +- GuardManager: source=G['F'].dropout, accessed_by=GetAttrGuardAccessor(dropout)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].dropout, 140194860993120)              # return F.dropout(x, p=0.5, training=False, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:68 in dropout_eval
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 1  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.627000 39817 site-packages/torch/_dynamo/guards.py:2321] [1/0] [__guards] 
+I1202 15:41:16.628000 39817 site-packages/torch/_dynamo/pgo.py:636] [1/0] put_code_state: no cache key, skipping
+I1202 15:41:16.630000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval, code: return F.dropout(x, p=0.5, training=False, inplace=inplace)[0m
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         dropout: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.dropout(l_args_0_, p = [34m0.5[0m, training = [34mFalse[0m, inplace = [34mFalse[0m);  [2ml_args_0_ = None[0m
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (dropout,)
+I1202 15:41:16.631000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     main()
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 207, in _move_exported_model_to_eval
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     _replace_dropout(model, train_to_eval=True)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 72, in _replace_dropout
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     match_pattern = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return _export_for_training(
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return fn(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return fn(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.671000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [2/0] 
+I1202 15:41:16.671000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [2/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.671000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [2/0] create_env
+V1202 15:41:16.672000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [2/0] wrap_to_fake L['args'][0] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.673000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [2/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.673000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [2/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.673000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [2/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.673000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.673000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.674000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.674000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=1)]
+V1202 15:41:16.674000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.674000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.674000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [2/0] INLINING <code object dropout_train at 0x7f81a8113730, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 64>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [2/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train (_replace_dropout.dropout_train) (inline depth: 1)
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [2/0] [__trace_source]                 return F.dropout(x, p=0.5, training=True, inplace=inplace)
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_ATTR dropout [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>)]
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_CONST 0.5 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable()]
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_CONST True [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5)]
+V1202 15:41:16.675000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_DEREF inplace [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True)]
+V1202 15:41:16.676000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE LOAD_CONST ('p', 'training', 'inplace') [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True), ConstantVariable(bool: True)]
+V1202 15:41:16.676000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 4 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: True), ConstantVariable(bool: True), TupleVariable(length=3)]
+V1202 15:41:16.678000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.678000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [2/0] DONE INLINING <code object dropout_train at 0x7f81a8113730, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 64>
+V1202 15:41:16.678000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [2/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.678000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [2/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.678000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [2/0] RETURN_VALUE triggered compile
+V1202 15:41:16.678000 39817 site-packages/torch/_dynamo/output_graph.py:972] [2/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]  ===== __compiled_fn_5 =====
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]     def forward(self, L_args_0_: "f32[1][1]cpu"):
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]         
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train, code: return F.dropout(x, p=0.5, training=True, inplace=inplace)
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]         dropout: "f32[1][1]cpu" = torch.nn.functional.dropout(l_args_0_, p = 0.5, training = True, inplace = True);  l_args_0_ = None
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]         return (dropout,)
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code]         
+V1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [2/0] [__graph_code] 
+I1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [2/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.679000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [2/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.681000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [2/0] produce_guards
+V1202 15:41:16.681000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [2/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.682000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [2/0] track_symint L['args'][0].stride()[0] 1 None
+V1202 15:41:16.682000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [2/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2364] [2/0] [__guards] GUARDS:
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] 
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] +- RootGuardManager
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 1                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200156840000)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847209264)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__closure__, accessed_by=GetAttrGuardAccessor(__closure__)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | | +- GuardManager: source=L['self'].fn.__closure__[0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | | | +- GuardManager: source=L['self'].fn.__closure__[0].cell_contents, accessed_by=GetAttrGuardAccessor(cell_contents)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__closure__[0].cell_contents, 108978043860704)  # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.dropout(x, p=0.5, training=True, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:65 in dropout_train
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | +- GuardManager: source=G['F'].dropout, accessed_by=GetAttrGuardAccessor(dropout)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].dropout, 140194860993120)              # return F.dropout(x, p=0.5, training=True, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:65 in dropout_train
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 1  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.683000 39817 site-packages/torch/_dynamo/guards.py:2321] [2/0] [__guards] 
+I1202 15:41:16.683000 39817 site-packages/torch/_dynamo/pgo.py:636] [2/0] put_code_state: no cache key, skipping
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:65 in dropout_train, code: return F.dropout(x, p=0.5, training=True, inplace=inplace)[0m
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         dropout: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.dropout(l_args_0_, p = [34m0.5[0m, training = [34mTrue[0m, inplace = [34mTrue[0m);  [2ml_args_0_ = None[0m
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (dropout,)
+I1202 15:41:16.686000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     main()
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 207, in _move_exported_model_to_eval
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     _replace_dropout(model, train_to_eval=True)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 77, in _replace_dropout
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     replacement_pattern = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return _export_for_training(
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return fn(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return fn(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.693000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [3/0] 
+I1202 15:41:16.694000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [3/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.694000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [3/0] create_env
+V1202 15:41:16.695000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [3/0] wrap_to_fake L['args'][0] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.695000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [3/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.695000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [3/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.695000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [3/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=1)]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=1), ConstDictVariable()]
+V1202 15:41:16.696000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [3/0] INLINING <code object dropout_eval at 0x7f81a8113c00, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 67>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [3/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval (_replace_dropout.dropout_eval) (inline depth: 1)
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [3/0] [__trace_source]                 return F.dropout(x, p=0.5, training=False, inplace=inplace)
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_ATTR dropout [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>)]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_CONST 0.5 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable()]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_CONST False [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5)]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_DEREF inplace [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False)]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE LOAD_CONST ('p', 'training', 'inplace') [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False), ConstantVariable(bool: True)]
+V1202 15:41:16.697000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 4 [TorchInGraphFunctionVariable(<function dropout at 0x7f81a8e38a60>), TensorVariable(), ConstantVariable(float: 0.5), ConstantVariable(bool: False), ConstantVariable(bool: True), TupleVariable(length=3)]
+V1202 15:41:16.698000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.698000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [3/0] DONE INLINING <code object dropout_eval at 0x7f81a8113c00, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 67>
+V1202 15:41:16.698000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [3/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.698000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [3/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.698000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [3/0] RETURN_VALUE triggered compile
+V1202 15:41:16.698000 39817 site-packages/torch/_dynamo/output_graph.py:972] [3/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]  ===== __compiled_fn_7 =====
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]     def forward(self, L_args_0_: "f32[1][1]cpu"):
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]         
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval, code: return F.dropout(x, p=0.5, training=False, inplace=inplace)
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]         dropout: "f32[1][1]cpu" = torch.nn.functional.dropout(l_args_0_, p = 0.5, training = False, inplace = True);  l_args_0_ = None
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]         return (dropout,)
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code]         
+V1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [3/0] [__graph_code] 
+I1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [3/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.699000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [3/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.701000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [3/0] produce_guards
+V1202 15:41:16.701000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [3/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.701000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [3/0] track_symint L['args'][0].stride()[0] 1 None
+V1202 15:41:16.702000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [3/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.702000 39817 site-packages/torch/_dynamo/guards.py:2364] [3/0] [__guards] GUARDS:
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] 
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] +- RootGuardManager
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 1                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200165884352)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847210496)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__closure__, accessed_by=GetAttrGuardAccessor(__closure__)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | | +- GuardManager: source=L['self'].fn.__closure__[0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | | | +- GuardManager: source=L['self'].fn.__closure__[0].cell_contents, accessed_by=GetAttrGuardAccessor(cell_contents)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__closure__[0].cell_contents, 108978043860704)  # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.dropout(x, p=0.5, training=False, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:68 in dropout_eval
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | +- GuardManager: source=G['F'].dropout, accessed_by=GetAttrGuardAccessor(dropout)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].dropout, 140194860993120)              # return F.dropout(x, p=0.5, training=False, inplace=inplace)  # ao/quantization/pt2e/export_utils.py:68 in dropout_eval
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 1  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.703000 39817 site-packages/torch/_dynamo/guards.py:2321] [3/0] [__guards] 
+I1202 15:41:16.703000 39817 site-packages/torch/_dynamo/pgo.py:636] [3/0] put_code_state: no cache key, skipping
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:68 in dropout_eval, code: return F.dropout(x, p=0.5, training=False, inplace=inplace)[0m
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         dropout: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.dropout(l_args_0_, p = [34m0.5[0m, training = [34mFalse[0m, inplace = [34mTrue[0m);  [2ml_args_0_ = None[0m
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (dropout,)
+I1202 15:41:16.706000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     main()
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 208, in _move_exported_model_to_eval
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     _replace_batchnorm(model, train_to_eval=True)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 161, in _replace_batchnorm
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     bn_train_aten = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return _export_for_training(
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return fn(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return fn(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.755000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [4/0] 
+I1202 15:41:16.756000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [4/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.756000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [4/0] create_env
+V1202 15:41:16.757000 39817 site-packages/torch/_dynamo/pgo.py:355] [4/0] automatic dynamic size L['args'][0] dim (1, 1, 3, 3) != (1,)
+V1202 15:41:16.757000 39817 site-packages/torch/_dynamo/pgo.py:355] [4/0] automatic dynamic stride L['args'][0] dim (InferStride(dim=2), InferStride(dim=0), InferStride(dim=3), 1) != (1,)
+V1202 15:41:16.757000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [4/0] wrap_to_fake L['args'][0] (1, 1, 3, 3) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None, None, None, None], constraint_strides=[None, None, None, None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.758000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [4/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1, 1, 3, 3)) at debug_level 0 before=False
+V1202 15:41:16.758000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [4/0] wrap_to_fake L['args'][1] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=1, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.759000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [4/0] create_graph_input L_args_1_ L['args'][1] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.759000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [4/0] wrap_to_fake L['args'][2] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=2, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.759000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [4/0] create_graph_input L_args_2_ L['args'][2] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.760000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [4/0] wrap_to_fake L['args'][3] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=3, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.760000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [4/0] create_graph_input L_args_3_ L['args'][3] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.760000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [4/0] wrap_to_fake L['args'][4] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=4, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.761000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [4/0] create_graph_input L_args_4_ L['args'][4] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.761000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.761000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.761000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.761000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=5)]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable()]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable()]
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [4/0] INLINING <code object bn_train at 0x7f81a8113d60, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 129>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:136 in bn_train (_replace_batchnorm.bn_train) (inline depth: 1)
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source]             return F.batch_norm(
+V1202 15:41:16.762000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_ATTR batch_norm [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:137 in bn_train (_replace_batchnorm.bn_train) (inline depth: 1)
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source]                 x, bn_running_mean, bn_running_var, bn_weight, bn_bias, training=True
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>)]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST bn_running_mean [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable()]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST bn_running_var [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable()]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST bn_weight [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_FAST bn_bias [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_CONST True [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:136 in bn_train (_replace_batchnorm.bn_train) (inline depth: 1)
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [4/0] [__trace_source]             return F.batch_norm(
+V1202 15:41:16.763000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE LOAD_CONST ('training',) [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), ConstantVariable(bool: True)]
+V1202 15:41:16.764000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 6 [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), ConstantVariable(bool: True), TupleVariable(length=1)]
+V1202 15:41:16.772000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.772000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [4/0] DONE INLINING <code object bn_train at 0x7f81a8113d60, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 129>
+V1202 15:41:16.773000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [4/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.773000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [4/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.773000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [4/0] RETURN_VALUE triggered compile
+V1202 15:41:16.773000 39817 site-packages/torch/_dynamo/output_graph.py:972] [4/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]  ===== __compiled_fn_9 =====
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]     def forward(self, L_args_0_: "f32[1, 1, 3, 3][9, 9, 3, 1]cpu", L_args_1_: "f32[1][1]cpu", L_args_2_: "f32[1][1]cpu", L_args_3_: "f32[1][1]cpu", L_args_4_: "f32[1][1]cpu"):
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         l_args_1_ = L_args_1_
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         l_args_2_ = L_args_2_
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         l_args_3_ = L_args_3_
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         l_args_4_ = L_args_4_
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:136 in bn_train, code: return F.batch_norm(
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         batch_norm: "f32[1, 1, 3, 3][9, 9, 3, 1]cpu" = torch.nn.functional.batch_norm(l_args_0_, l_args_3_, l_args_4_, l_args_1_, l_args_2_, training = True);  l_args_0_ = l_args_3_ = l_args_4_ = l_args_1_ = l_args_2_ = None
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         return (batch_norm,)
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code]         
+V1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [4/0] [__graph_code] 
+I1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [4/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.774000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [4/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.777000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [4/0] produce_guards
+V1202 15:41:16.777000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].size()[1] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].size()[2] 3 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].size()[3] 3 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].stride()[0] 9 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].stride()[1] 9 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].stride()[2] 3 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].stride()[3] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][1].size()[0] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][1].stride()[0] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][1].storage_offset() 0 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][2].size()[0] 1 None
+V1202 15:41:16.778000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][2].stride()[0] 1 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][2].storage_offset() 0 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][3].size()[0] 1 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][3].stride()[0] 1 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][3].storage_offset() 0 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][4].size()[0] 1 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][4].stride()[0] 1 None
+V1202 15:41:16.779000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [4/0] track_symint L['args'][4].storage_offset() 0 None
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2364] [4/0] [__guards] GUARDS:
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] 
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- RootGuardManager
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 5                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['args'][1], accessed_by=TupleGetItemGuardAccessor(1)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][1], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][1], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['args'][2], accessed_by=TupleGetItemGuardAccessor(2)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][2], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][2], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['args'][3], accessed_by=TupleGetItemGuardAccessor(3)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][3], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][3], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['args'][4], accessed_by=TupleGetItemGuardAccessor(4)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][4], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][4], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200165703744)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847210848)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.batch_norm(  # ao/quantization/pt2e/export_utils.py:136 in bn_train
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | +- GuardManager: source=G['F'].batch_norm, accessed_by=GetAttrGuardAccessor(batch_norm)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].batch_norm, 140194860998160)           # return F.batch_norm(  # ao/quantization/pt2e/export_utils.py:136 in bn_train
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[1] == 1  # (unknown source L['args'][0].size()[1], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[2] == 3  # (unknown source L['args'][0].size()[2], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[3] == 3  # (unknown source L['args'][0].size()[3], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 9  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[1] == 9  # (unknown source L['args'][0].stride()[1], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[2] == 3  # (unknown source L['args'][0].stride()[2], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[3] == 1  # (unknown source L['args'][0].stride()[3], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][1].size()[0] == 1  # (unknown source L['args'][1].size()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][1].stride()[0] == 1  # (unknown source L['args'][1].stride()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][1].storage_offset() == 0  # (unknown source L['args'][1].storage_offset(), please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][2].size()[0] == 1  # (unknown source L['args'][2].size()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][2].stride()[0] == 1  # (unknown source L['args'][2].stride()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][2].storage_offset() == 0  # (unknown source L['args'][2].storage_offset(), please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][3].size()[0] == 1  # (unknown source L['args'][3].size()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][3].stride()[0] == 1  # (unknown source L['args'][3].stride()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][3].storage_offset() == 0  # (unknown source L['args'][3].storage_offset(), please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][4].size()[0] == 1  # (unknown source L['args'][4].size()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][4].stride()[0] == 1  # (unknown source L['args'][4].stride()[0], please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] +- LAMBDA_GUARD: L['args'][4].storage_offset() == 0  # (unknown source L['args'][4].storage_offset(), please file a bug)
+V1202 15:41:16.783000 39817 site-packages/torch/_dynamo/guards.py:2321] [4/0] [__guards] 
+I1202 15:41:16.784000 39817 site-packages/torch/_dynamo/pgo.py:636] [4/0] put_code_state: no cache key, skipping
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1, 1, 3, 3][0m[2m[34m[0m[2m[32m[0m", L_args_1_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_2_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_3_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_4_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_1_ = L_args_1_
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_2_ = L_args_2_
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_3_ = L_args_3_
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_4_ = L_args_4_
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:136 in bn_train, code: return F.batch_norm([0m
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         batch_norm: "[31mf32[0m[34m[1, 1, 3, 3][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.batch_norm(l_args_0_, l_args_3_, l_args_4_, l_args_1_, l_args_2_, training = [34mTrue[0m);  [2ml_args_0_ = l_args_3_ = l_args_4_ = l_args_1_ = l_args_2_ = None[0m
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (batch_norm,)
+I1202 15:41:16.787000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0] torchdynamo start compiling forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25, stack (elided 4 frames):
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 316, in <module>
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     main()
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 299, in main
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     calibrate(prepared_model, calibration_loader)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq.py", line 294, in calibrate
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     torch.ao.quantization.move_exported_model_to_eval(model)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 208, in _move_exported_model_to_eval
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     _replace_batchnorm(model, train_to_eval=True)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 167, in _replace_batchnorm
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     bn_eval_aten = _get_aten_graph_module_for_pattern(
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/utils.py", line 378, in _get_aten_graph_module_for_pattern
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     aten_pattern = torch.export.export_for_training(
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 168, in export_for_training
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return _export_for_training(
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1008, in wrapper
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     ep = fn(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/exported_program.py", line 128, in wrapper
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return fn(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1834, in _export_for_training
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     export_artifact = export_func(  # type: ignore[operator]
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 1283, in _strict_export_lower_to_aten_ir
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     gm_torch_level = _export_to_torch_ir(
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/_trace.py", line 662, in _export_to_torch_ir
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     gm_torch_level, _ = torch._dynamo.export(
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1569, in inner
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     result_traced = opt_f(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return forward_call(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 574, in _fn
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return fn(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]   File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0]     return self._call_impl(*args, **kwargs)
+V1202 15:41:16.795000 39817 site-packages/torch/_dynamo/convert_frame.py:930] [5/0] 
+I1202 15:41:16.796000 39817 site-packages/torch/_dynamo/symbolic_convert.py:2706] [5/0] Step 1: torchdynamo start tracing forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:16.796000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] [5/0] create_env
+V1202 15:41:16.797000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [5/0] wrap_to_fake L['args'][0] (1, 1, 3, 3) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>, <DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>, <DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None, None, None, None], constraint_strides=[None, None, None, None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=0, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.797000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [5/0] create_graph_input L_args_0_ L['args'][0] FakeTensor(..., size=(1, 1, 3, 3)) at debug_level 0 before=False
+V1202 15:41:16.798000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [5/0] wrap_to_fake L['args'][1] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=1, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.798000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [5/0] create_graph_input L_args_1_ L['args'][1] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.798000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [5/0] wrap_to_fake L['args'][2] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=2, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.799000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [5/0] create_graph_input L_args_2_ L['args'][2] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.799000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [5/0] wrap_to_fake L['args'][3] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=3, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.800000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [5/0] create_graph_input L_args_3_ L['args'][3] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.800000 39817 site-packages/torch/_dynamo/variables/builder.py:2853] [5/0] wrap_to_fake L['args'][4] (1,) StatefulSymbolicContext(dynamic_sizes=[<DimDynamic.STATIC: 2>], dynamic_strides=[<DimDynamic.INFER_STRIDE: 4>], constraint_sizes=[None], constraint_strides=[None], view_base_context=None, tensor_source=GetItemSource(base=LocalSource(local_name='args', is_input=True, is_derefed_cell_contents=False), index=4, index_is_slice=False), shape_env_to_source_to_symbol_cache={}) <class 'torch.Tensor'>
+V1202 15:41:16.800000 39817 site-packages/torch/_dynamo/output_graph.py:2156] [5/0] create_graph_input L_args_4_ L['args'][4] FakeTensor(..., size=(1,)) at debug_level 0 before=False
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:27 in forward (_WrapperModule.forward)
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source]             return self.fn(*args, **kwargs)
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST self []
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_ATTR fn [NNModuleVariable()]
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST args [UserFunctionVariable()]
+V1202 15:41:16.801000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE BUILD_MAP 0 [UserFunctionVariable(), TupleVariable(length=5)]
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST kwargs [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable()]
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE DICT_MERGE 1 [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable(), ConstDictVariable()]
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE CALL_FUNCTION_EX 1 [UserFunctionVariable(), TupleVariable(length=5), ConstDictVariable()]
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3160] [5/0] INLINING <code object bn_eval at 0x7f81a8113e10, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 140>, inlined according trace_rules.lookup LEGACY_MOD_INLINELIST
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:147 in bn_eval (_replace_batchnorm.bn_eval) (inline depth: 1)
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source]             return F.batch_norm(
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_GLOBAL F []
+V1202 15:41:16.802000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_ATTR batch_norm [PythonModuleVariable(<module 'torch.nn.functional' from '/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/functional.py'>)]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:148 in bn_eval (_replace_batchnorm.bn_eval) (inline depth: 1)
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source]                 x, bn_running_mean, bn_running_var, bn_weight, bn_bias, training=False
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST x [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>)]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST bn_running_mean [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable()]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST bn_running_var [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable()]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST bn_weight [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_FAST bn_bias [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_CONST False [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable()]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source] TRACE starts_line /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:147 in bn_eval (_replace_batchnorm.bn_eval) (inline depth: 1)
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:932] [5/0] [__trace_source]             return F.batch_norm(
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE LOAD_CONST ('training',) [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), ConstantVariable(bool: False)]
+V1202 15:41:16.803000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE CALL_FUNCTION_KW 6 [TorchInGraphFunctionVariable(<function batch_norm at 0x7f81a8e39e10>), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), TensorVariable(), ConstantVariable(bool: False), TupleVariable(length=1)]
+V1202 15:41:16.810000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+V1202 15:41:16.810000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3222] [5/0] DONE INLINING <code object bn_eval at 0x7f81a8113e10, file "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py", line 140>
+V1202 15:41:16.810000 39817 site-packages/torch/_dynamo/symbolic_convert.py:955] [5/0] [__trace_bytecode] TRACE RETURN_VALUE None [TensorVariable()]
+I1202 15:41:16.810000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3028] [5/0] Step 1: torchdynamo done tracing forward (RETURN_VALUE)
+V1202 15:41:16.810000 39817 site-packages/torch/_dynamo/symbolic_convert.py:3032] [5/0] RETURN_VALUE triggered compile
+V1202 15:41:16.810000 39817 site-packages/torch/_dynamo/output_graph.py:972] [5/0] COMPILING GRAPH due to GraphCompileReason(reason='return_value', user_stack=[<FrameSummary file /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py, line 27 in forward>], graph_break=False)
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code] TRACED GRAPH
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]  ===== __compiled_fn_11 =====
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]  /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/fx/_lazy_graph_module.py class GraphModule(torch.nn.Module):
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]     def forward(self, L_args_0_: "f32[1, 1, 3, 3][9, 9, 3, 1]cpu", L_args_1_: "f32[1][1]cpu", L_args_2_: "f32[1][1]cpu", L_args_3_: "f32[1][1]cpu", L_args_4_: "f32[1][1]cpu"):
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         l_args_0_ = L_args_0_
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         l_args_1_ = L_args_1_
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         l_args_2_ = L_args_2_
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         l_args_3_ = L_args_3_
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         l_args_4_ = L_args_4_
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]          # File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:147 in bn_eval, code: return F.batch_norm(
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         batch_norm: "f32[1, 1, 3, 3][9, 9, 3, 1]cpu" = torch.nn.functional.batch_norm(l_args_0_, l_args_3_, l_args_4_, l_args_1_, l_args_2_, training = False);  l_args_0_ = l_args_3_ = l_args_4_ = l_args_1_ = l_args_2_ = None
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         return (batch_norm,)
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code]         
+V1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1353] [5/0] [__graph_code] 
+I1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1458] [5/0] Step 2: calling compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.811000 39817 site-packages/torch/_dynamo/output_graph.py:1463] [5/0] Step 2: done compiler function dynamo_normalization_capturing_compiler
+I1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] [5/0] produce_guards
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].size()[0] 1 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].size()[1] 1 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].size()[2] 3 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].size()[3] 3 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].stride()[0] 9 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].stride()[1] 9 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].stride()[2] 3 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].stride()[3] 1 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][0].storage_offset() 0 None
+V1202 15:41:16.815000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][1].size()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][1].stride()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][1].storage_offset() 0 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][2].size()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][2].stride()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][2].storage_offset() 0 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][3].size()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][3].stride()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][3].storage_offset() 0 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][4].size()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][4].stride()[0] 1 None
+V1202 15:41:16.816000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] [5/0] track_symint L['args'][4].storage_offset() 0 None
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2364] [5/0] [__guards] GUARDS:
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] 
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] TREE_GUARD_MANAGER:
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- RootGuardManager
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- DEFAULT_DEVICE: utils_device.CURRENT_DEVICE == None                           # _dynamo/output_graph.py:493 in init_ambient_guards
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- GLOBAL_STATE: ___check_global_state()
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- TORCH_FUNCTION_MODE_STACK: ___check_torch_function_mode_stack()
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- GuardManager: source=L['args'], accessed_by=DictGetItemGuardAccessor('args')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- TYPE_MATCH: ___check_type_id(L['args'], 108978043801120)                  # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- LENGTH_CHECK: len(L['args']) == 5                                           # _dynamo/variables/builder.py:1252 in wrap_listlike
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['args'][0], accessed_by=TupleGetItemGuardAccessor(0)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][0], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][0], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['args'][1], accessed_by=TupleGetItemGuardAccessor(1)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][1], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][1], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['args'][2], accessed_by=TupleGetItemGuardAccessor(2)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][2], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][2], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['args'][3], accessed_by=TupleGetItemGuardAccessor(3)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][3], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][3], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['args'][4], accessed_by=TupleGetItemGuardAccessor(4)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- TYPE_MATCH: ___check_type_id(L['args'][4], 108979020365600)               # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- NO_HASATTR: hasattr(L['args'][4], '_dynamo_dynamic_indices') == False     # _dynamo/variables/builder.py:1690 in wrap_tensor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- GuardManager: source=L['self'], accessed_by=DictGetItemGuardAccessor('self')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- ID_MATCH: ___check_obj_id(L['self'], 140200165703744)                   # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=L['self'].__dict__, accessed_by=GetGenericDictGuardAccessor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- GuardManager: source=L['self'].training, accessed_by=DictGetItemGuardAccessor('training')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(L['self'].training, 108978043860704)          # _dynamo/output_graph.py:795 in register_attr_or_module
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- GuardManager: source=L['self'].fn, accessed_by=DictGetItemGuardAccessor('fn')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | | +- GuardManager: source=L['self'].fn.__code__, accessed_by=GetAttrGuardAccessor(__code__)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | | | +- ID_MATCH: ___check_obj_id(L['self'].fn.__code__, 140194847211024)       # return self.fn(*args, **kwargs)  # ao/quantization/pt2e/export_utils.py:27 in forward
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- GuardManager: source=L['kwargs'], accessed_by=DictGetItemGuardAccessor('kwargs')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- DICT_LENGTH: not L['kwargs']                                               # _dynamo/variables/builder.py:618 in _wrap
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | +- GuardManager: source=G, accessed_by=GlobalsGuardAccessor
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | +- GuardManager: source=G['F'], accessed_by=DictGetItemGuardAccessor('F')
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- ID_MATCH: ___check_obj_id(G['F'], 140194863954848)                      # return F.batch_norm(  # ao/quantization/pt2e/export_utils.py:147 in bn_eval
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | +- GuardManager: source=G['F'].batch_norm, accessed_by=GetAttrGuardAccessor(batch_norm)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] | | | | +- ID_MATCH: ___check_obj_id(G['F'].batch_norm, 140194860998160)           # return F.batch_norm(  # ao/quantization/pt2e/export_utils.py:147 in bn_eval
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[0] == 1  # (unknown source L['args'][0].size()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[1] == 1  # (unknown source L['args'][0].size()[1], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[2] == 3  # (unknown source L['args'][0].size()[2], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].size()[3] == 3  # (unknown source L['args'][0].size()[3], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[0] == 9  # (unknown source L['args'][0].stride()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[1] == 9  # (unknown source L['args'][0].stride()[1], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[2] == 3  # (unknown source L['args'][0].stride()[2], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].stride()[3] == 1  # (unknown source L['args'][0].stride()[3], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][0].storage_offset() == 0  # (unknown source L['args'][0].storage_offset(), please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][1].size()[0] == 1  # (unknown source L['args'][1].size()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][1].stride()[0] == 1  # (unknown source L['args'][1].stride()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][1].storage_offset() == 0  # (unknown source L['args'][1].storage_offset(), please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][2].size()[0] == 1  # (unknown source L['args'][2].size()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][2].stride()[0] == 1  # (unknown source L['args'][2].stride()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][2].storage_offset() == 0  # (unknown source L['args'][2].storage_offset(), please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][3].size()[0] == 1  # (unknown source L['args'][3].size()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][3].stride()[0] == 1  # (unknown source L['args'][3].stride()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][3].storage_offset() == 0  # (unknown source L['args'][3].storage_offset(), please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][4].size()[0] == 1  # (unknown source L['args'][4].size()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][4].stride()[0] == 1  # (unknown source L['args'][4].stride()[0], please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] +- LAMBDA_GUARD: L['args'][4].storage_offset() == 0  # (unknown source L['args'][4].storage_offset(), please file a bug)
+V1202 15:41:16.820000 39817 site-packages/torch/_dynamo/guards.py:2321] [5/0] [__guards] 
+I1202 15:41:16.821000 39817 site-packages/torch/_dynamo/pgo.py:636] [5/0] put_code_state: no cache key, skipping
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1599] Summary of dimension constraints:
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] Dynamo captured graph:
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] 
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656] class GraphModule(torch.nn.Module):
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]     def forward(self, L_args_0_: "[31mf32[0m[34m[1, 1, 3, 3][0m[2m[34m[0m[2m[32m[0m", L_args_1_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_2_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_3_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m", L_args_4_: "[31mf32[0m[34m[1][0m[2m[34m[0m[2m[32m[0m"):
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_0_ = L_args_0_
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_1_ = L_args_1_
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_2_ = L_args_2_
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_3_ = L_args_3_
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         l_args_4_ = L_args_4_
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]          [2m# File: /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:147 in bn_eval, code: return F.batch_norm([0m
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         batch_norm: "[31mf32[0m[34m[1, 1, 3, 3][0m[2m[34m[0m[2m[32m[0m" = torch.nn.functional.batch_norm(l_args_0_, l_args_3_, l_args_4_, l_args_1_, l_args_2_, training = [34mFalse[0m);  [2ml_args_0_ = l_args_3_ = l_args_4_ = l_args_1_ = l_args_2_ = None[0m
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         return (batch_norm,)
+I1202 15:41:16.824000 39817 site-packages/torch/_dynamo/eval_frame.py:1656]         
+I1202 15:41:20.687000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:3192] create_env
+I1202 15:41:21.032000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4547] produce_guards
+V1202 15:41:21.032000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[0] 2 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[1] 3 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[2] 518 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].size()[3] 686 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[0] 1066044 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[1] 355348 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[2] 686 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].stride()[3] 1 None
+V1202 15:41:21.033000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:4755] track_symint L['args'][0][0].storage_offset() 0 None
+[2025-12-02 15:41:25,109][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 15:41:25,109][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 15:41:25,109][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 15:41:25,109][    INFO]  
+[2025-12-02 15:41:25,110][    INFO] ==================================================================================================
+[2025-12-02 15:41:25,110][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 15:41:25,110][    INFO]    0.997,    0.999,    1.000,    0.022,    0.005,    0.158,    0.037,    0.009,    0.036,    3.697
+[2025-12-02 15:41:25,110][    INFO] ==================================================================================================
+Size (quantized): 98.91 MB
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398] TorchDynamo attempted to trace the following frames: [
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398]   * forward /home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/ao/quantization/pt2e/export_utils.py:25
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/eval_frame.py:398] ]
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/utils.py:446] TorchDynamo compilation metrics:
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/utils.py:446] Function, Runtimes (s)
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/utils.py:446] _compile.compile_inner, 0.1089
+I1202 15:41:25.176000 39817 site-packages/torch/_dynamo/utils.py:446] OutputGraph.call_user_compiler, 0.0016
+V1202 15:41:25.176000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats constrain_symbol_range: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats defer_runtime_assert: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats evaluate_expr: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _simplify_floor_div: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _maybe_guard_rel: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _find: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats has_hint: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats size_hint: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats simplify: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _update_divisible: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats replace: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _maybe_evaluate_static: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats get_implications: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats get_axioms: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.177000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats _maybe_evaluate_static_worker: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)
+V1202 15:41:25.178000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats safe_expand: CacheInfo(hits=0, misses=0, maxsize=256, currsize=0)
+V1202 15:41:25.178000 39817 site-packages/torch/fx/experimental/symbolic_shapes.py:172] lru_cache_stats uninteresting_files: CacheInfo(hits=0, misses=0, maxsize=None, currsize=0)

@@ -1,0 +1,50 @@
+xFormers not available
+xFormers not available
+[2025-12-02 22:12:17,097][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log_oldpyt',
+ 'pyt_ver': 'oldpyt',
+ 'strict': 'nonstrict',
+ 'test_lim': 20}
+
+[2025-12-02 22:12:17,098][    INFO] Using "cpu"
+[2025-12-02 22:12:17,571][    INFO] Testing original model
+Device: "cpu"
+Size (full): 99.22 MB
+[2025-12-02 22:12:55,933][    INFO] Measured over "20" samples of training data from "HyperSim" dataset
+[2025-12-02 22:12:55,933][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 22:12:55,933][    INFO]  
+[2025-12-02 22:12:55,934][    INFO] ==================================================================================================
+[2025-12-02 22:12:55,934][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 22:12:55,934][    INFO]    0.998,    1.000,    1.000,    0.026,    0.007,    0.202,    0.036,    0.011,    0.032,    1.786
+[2025-12-02 22:12:55,934][    INFO] ==================================================================================================
+
+W1202 22:12:56.186000 69985 site-packages/torch/_export/__init__.py:67] +============================+
+W1202 22:12:56.186000 69985 site-packages/torch/_export/__init__.py:68] |     !!!   WARNING   !!!    |
+W1202 22:12:56.186000 69985 site-packages/torch/_export/__init__.py:69] +============================+
+W1202 22:12:56.186000 69985 site-packages/torch/_export/__init__.py:70] capture_pre_autograd_graph() is deprecated and doesn't provide any function guarantee moving forward.
+W1202 22:12:56.186000 69985 site-packages/torch/_export/__init__.py:71] Please switch to use torch.export.export_for_training instead.
+[2025-12-02 22:13:05,480][    INFO] Testing quantized model
+[2025-12-02 22:13:49,827][    INFO] Measured over "20" samples of training data from "HyperSim" dataset
+[2025-12-02 22:13:49,827][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 22:13:49,827][    INFO]  
+[2025-12-02 22:13:49,828][    INFO] ==================================================================================================
+[2025-12-02 22:13:49,828][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 22:13:49,828][    INFO]    0.993,    0.999,    1.000,    0.025,    0.008,    0.195,    0.038,    0.010,    0.036,    2.192
+[2025-12-02 22:13:49,828][    INFO] ==================================================================================================
+
+Size (quantized): 27.35 MB
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq_x86.py", line 333, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq_x86.py", line 311, in main
+    torch.export.save(quantized_model, os.path.join(args.outdir, f'{args.encoder}_{args.dataset}_pqt_{args.pyt_ver}_{args.strict}_x86_v1.pth'))
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 432, in save
+    raise TypeError(
+TypeError: The 'ep' parameter must be an instance of 'ExportedProgram', got 'GraphModule' instead.

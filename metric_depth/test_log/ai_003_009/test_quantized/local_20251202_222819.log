@@ -1,0 +1,44 @@
+xFormers not available
+xFormers not available
+[2025-12-02 22:28:21,175][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'PTQ/result_selected/torch.ao/vits_HyperSim_pqt_oldpyt_nonstrict_x86_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_quantized'}
+
+Traceback (most recent call last):
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 1750, in deserialize_graph
+    self.deserialize_node(serialized_node, target)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 1832, in deserialize_node
+    raise SerializeError(
+torch._export.serde.serialize.SerializeError: Unsupported target type for node Node(target='torch.ops.quantized_decomposed.quantize_per_tensor.default', inputs=[NamedArgument(name='input', arg=Argument(as_tensor=TensorArgument(name='x'))), NamedArgument(name='scale', arg=Argument(as_float=0.019995752722024918)), NamedArgument(name='zero_point', arg=Argument(as_int=112)), NamedArgument(name='quant_min', arg=Argument(as_int=0)), NamedArgument(name='quant_max', arg=Argument(as_int=255)), NamedArgument(name='dtype', arg=Argument(as_scalar_type=1))], outputs=[Argument(as_tensor=TensorArgument(name='quantize_per_tensor'))], metadata={'stack_trace': '  File "<eval_with_key>.74", line 7, in forward\n    quantize_per_tensor_default = torch.ops.quantized_decomposed.quantize_per_tensor.default(arg0_1, 0.019995752722024918, 112, 0, 255, torch.uint8);  arg0_1 = None\n', 'nn_module_stack': 'L__self__,,torch.fx.graph_module.GraphModule.__new__.<locals>.GraphModuleImpl', 'source_fn_stack': 'quantize_per_tensor_default,torch.ops.quantized_decomposed.quantize_per_tensor.default', 'torch_fn': 'quantize_per_tensor.default_1;OpOverload.quantize_per_tensor.default'}): <class 'str'>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 140, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 73, in main
+    model_ep = torch.export.load(args.load_from)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/export/__init__.py", line 571, in load
+    ep = deserialize(artifact, expected_opset_version)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 2583, in deserialize
+    ExportedProgramDeserializer(expected_opset_version)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 2459, in deserialize
+    .deserialize(
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 2008, in deserialize
+    self.deserialize_graph(serialized_graph_module.graph)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 1753, in deserialize_graph
+    raise SerializeError(
+torch._export.serde.serialize.SerializeError: Failed deserializing node Node(target='torch.ops.quantized_decomposed.quantize_per_tensor.default', inputs=[NamedArgument(name='input', arg=Argument(as_tensor=TensorArgument(name='x'))), NamedArgument(name='scale', arg=Argument(as_float=0.019995752722024918)), NamedArgument(name='zero_point', arg=Argument(as_int=112)), NamedArgument(name='quant_min', arg=Argument(as_int=0)), NamedArgument(name='quant_max', arg=Argument(as_int=255)), NamedArgument(name='dtype', arg=Argument(as_scalar_type=1))], outputs=[Argument(as_tensor=TensorArgument(name='quantize_per_tensor'))], metadata={'stack_trace': '  File "<eval_with_key>.74", line 7, in forward\n    quantize_per_tensor_default = torch.ops.quantized_decomposed.quantize_per_tensor.default(arg0_1, 0.019995752722024918, 112, 0, 255, torch.uint8);  arg0_1 = None\n', 'nn_module_stack': 'L__self__,,torch.fx.graph_module.GraphModule.__new__.<locals>.GraphModuleImpl', 'source_fn_stack': 'quantize_per_tensor_default,torch.ops.quantized_decomposed.quantize_per_tensor.default', 'torch_fn': 'quantize_per_tensor.default_1;OpOverload.quantize_per_tensor.default'})
+ Original exception Traceback (most recent call last):
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 1750, in deserialize_graph
+    self.deserialize_node(serialized_node, target)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/_export/serde/serialize.py", line 1832, in deserialize_node
+    raise SerializeError(
+torch._export.serde.serialize.SerializeError: Unsupported target type for node Node(target='torch.ops.quantized_decomposed.quantize_per_tensor.default', inputs=[NamedArgument(name='input', arg=Argument(as_tensor=TensorArgument(name='x'))), NamedArgument(name='scale', arg=Argument(as_float=0.019995752722024918)), NamedArgument(name='zero_point', arg=Argument(as_int=112)), NamedArgument(name='quant_min', arg=Argument(as_int=0)), NamedArgument(name='quant_max', arg=Argument(as_int=255)), NamedArgument(name='dtype', arg=Argument(as_scalar_type=1))], outputs=[Argument(as_tensor=TensorArgument(name='quantize_per_tensor'))], metadata={'stack_trace': '  File "<eval_with_key>.74", line 7, in forward\n    quantize_per_tensor_default = torch.ops.quantized_decomposed.quantize_per_tensor.default(arg0_1, 0.019995752722024918, 112, 0, 255, torch.uint8);  arg0_1 = None\n', 'nn_module_stack': 'L__self__,,torch.fx.graph_module.GraphModule.__new__.<locals>.GraphModuleImpl', 'source_fn_stack': 'quantize_per_tensor_default,torch.ops.quantized_decomposed.quantize_per_tensor.default', 'torch_fn': 'quantize_per_tensor.default_1;OpOverload.quantize_per_tensor.default'}): <class 'str'>
+

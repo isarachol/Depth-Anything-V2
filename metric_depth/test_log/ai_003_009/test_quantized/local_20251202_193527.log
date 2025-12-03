@@ -1,0 +1,21 @@
+xFormers not available
+xFormers not available
+[2025-12-02 19:35:29,074][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'PTQ/result_selected/torch.ao/vits_HyperSim_pqt_newpyt_nonstrict_x86_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_quantized'}
+
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 135, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 82, in main
+    model.load_state_dict(new_state_dict) # added ['model']
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2581, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for DepthAnythingV2:
+	Missing key(s) in state_dict: "pretrained.mask_token", "depth_head.scratch.refinenet4.resConfUnit1.conv1.weight", "depth_head.scratch.refinenet4.resConfUnit1.conv1.bias", "depth_head.scratch.refinenet4.resConfUnit1.conv2.weight", "depth_head.scratch.refinenet4.resConfUnit1.conv2.bias". 

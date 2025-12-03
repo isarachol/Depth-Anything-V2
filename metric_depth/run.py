@@ -12,6 +12,8 @@ import pstats
 from depth_anything_v2.dpt import DepthAnythingV2
 from add_v_cbar import add_v_cbar
 
+# force using cpu
+torch.cuda.is_available = lambda: False
 
 # if __name__ == '__main__':
 def main():
@@ -31,8 +33,9 @@ def main():
     
     args = parser.parse_args()
     
-    DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
-    
+    DEVICE = 'cpu'#'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+    print(DEVICE)
+
     model_configs = {
         'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
         'vitb': {'encoder': 'vitb', 'features': 128, 'out_channels': [96, 192, 384, 768]},

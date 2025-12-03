@@ -1,0 +1,19 @@
+xFormers not available
+xFormers not available
+cpu
+Progress 1/1: /home/tand/Documents/class/cs523/project/depth_anything_v2/HyperSim/all/ai_003_009/images/scene_cam_00_final_preview/frame.0000.color.jpg
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/run.py", line 133, in <module>
+    cProfile.run('main()', 'profile_results.prof')
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 17, in run
+    return _pyprofile._Utils(Profile).run(statement, filename, sort)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/profile.py", line 54, in run
+    prof.run(statement)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 96, in run
+    return self.runctx(cmd, dict, dict)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 101, in runctx
+    exec(cmd, globals, locals)
+  File "<string>", line 1, in <module>
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/run.py", line 79, in main
+    print(raw_image.device())
+TypeError: 'str' object is not callable

@@ -149,7 +149,7 @@ class DPTHead(nn.Module):
         
         return out
 
-
+@torch.compiler.allow_in_graph
 class DepthAnythingV2(nn.Module):
     def __init__(
         self, 

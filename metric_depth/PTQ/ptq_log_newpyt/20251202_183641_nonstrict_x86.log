@@ -1,0 +1,18 @@
+xFormers not available
+xFormers not available
+[2025-12-02 18:36:42,702][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log',
+ 'strict': 'nonstrict',
+ 'test_lim': 20}
+
+[2025-12-02 18:36:42,703][    INFO] Using "cpu"
+[2025-12-02 18:36:43,176][    INFO] Testing original model
+Device: "cpu"
+Size (full): 99.22 MB

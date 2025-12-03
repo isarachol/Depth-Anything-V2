@@ -1,4 +1,11 @@
-#!bin/bash
+#!/bin/bash
 
-python run.py --encoder vitb --load-from exp/HyperSim/ai_001_001/vitb_HyperSim_v1.pth --max-depth 20 --img-path /projectnb/cs523aw/students/isara/software/DepthDatasets/HyperSim/all/ai_001_001/images/scene_cam_00_final_preview/frame.0042.color.jpg --outdir depth_vis
+encoder="vits"
+load_from="/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+max_depth=20
+img_path="/home/tand/Documents/class/cs523/project/depth_anything_v2/HyperSim/all/ai_003_009/images/scene_cam_00_final_preview/frame.0000.color.jpg"
+out_dir="depth_vis/finetuned2_vits"
+
+
+python run.py --encoder $encoder --load-from $load_from --max-depth $max_depth --img-path $img_path --outdir $out_dir 2>&1 | tee -a "profiler/$(date +"%Y%m%d_%H%M%S").log"
 

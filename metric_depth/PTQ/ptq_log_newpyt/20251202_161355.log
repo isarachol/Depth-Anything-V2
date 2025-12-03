@@ -1,0 +1,47 @@
+xFormers not available
+xFormers not available
+[2025-12-02 16:13:56,454][    INFO] {'bs': 2,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log'}
+
+[2025-12-02 16:13:56,455][    INFO] Using "cpu"
+[2025-12-02 16:13:56,920][    INFO] Testing original model
+Device: "cpu"
+Size (full): 99.22 MB
+[2025-12-02 16:14:05,860][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 16:14:05,860][    INFO] Measured over "2" samples of training data from "HyperSim" dataset
+[2025-12-02 16:14:05,860][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 16:14:05,860][    INFO]  
+[2025-12-02 16:14:05,860][    INFO] ==================================================================================================
+[2025-12-02 16:14:05,860][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 16:14:05,860][    INFO]    0.998,    0.999,    1.000,    0.023,    0.007,    0.207,    0.036,    0.010,    0.034,    3.224
+[2025-12-02 16:14:05,860][    INFO] ==================================================================================================
+
+[2025-12-02 16:14:10,832][    INFO] Testing quantized model
+[2025-12-02 16:14:17,586][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 16:14:17,586][    INFO] Measured over "2" samples of training data from "HyperSim" dataset
+[2025-12-02 16:14:17,586][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 16:14:17,586][    INFO]  
+[2025-12-02 16:14:17,587][    INFO] ==================================================================================================
+[2025-12-02 16:14:17,587][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 16:14:17,587][    INFO]    0.998,    0.999,    1.000,    0.023,    0.007,    0.207,    0.036,    0.010,    0.034,    3.249
+[2025-12-02 16:14:17,587][    INFO] ==================================================================================================
+
+Size (quantized): 98.91 MB
+Size (optimized): 98.91 MB
+No CUDA runtime is found, using CUDA_HOME='/home/tand/miniconda3/envs/cs523'
+[2025-12-02 16:14:44,568][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 16:14:44,568][    INFO] Measured over "2" samples of training data from "HyperSim" dataset
+[2025-12-02 16:14:44,568][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 16:14:44,568][    INFO]  
+[2025-12-02 16:14:44,568][    INFO] ==================================================================================================
+[2025-12-02 16:14:44,568][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 16:14:44,568][    INFO]    0.998,    0.999,    1.000,    0.023,    0.007,    0.207,    0.036,    0.010,    0.034,   12.975
+[2025-12-02 16:14:44,568][    INFO] ==================================================================================================
+

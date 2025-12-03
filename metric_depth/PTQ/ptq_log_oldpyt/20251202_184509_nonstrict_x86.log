@@ -1,0 +1,51 @@
+xFormers not available
+xFormers not available
+[2025-12-02 18:45:11,323][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log_oldpyt',
+ 'strict': 'nonstrict',
+ 'test_lim': 1}
+
+[2025-12-02 18:45:11,324][    INFO] Using "cpu"
+[2025-12-02 18:45:11,797][    INFO] Testing original model
+Device: "cpu"
+Size (full): 99.22 MB
+[2025-12-02 18:45:15,534][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 18:45:15,534][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 18:45:15,534][    INFO]  
+[2025-12-02 18:45:15,534][    INFO] ==================================================================================================
+[2025-12-02 18:45:15,534][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 18:45:15,534][    INFO]    0.997,    0.999,    1.000,    0.022,    0.005,    0.158,    0.037,    0.009,    0.036,    1.341
+[2025-12-02 18:45:15,534][    INFO] ==================================================================================================
+
+W1202 18:45:15.752000 55806 site-packages/torch/_export/__init__.py:67] +============================+
+W1202 18:45:15.752000 55806 site-packages/torch/_export/__init__.py:68] |     !!!   WARNING   !!!    |
+W1202 18:45:15.752000 55806 site-packages/torch/_export/__init__.py:69] +============================+
+W1202 18:45:15.752000 55806 site-packages/torch/_export/__init__.py:70] capture_pre_autograd_graph() is deprecated and doesn't provide any function guarantee moving forward.
+W1202 18:45:15.753000 55806 site-packages/torch/_export/__init__.py:71] Please switch to use torch.export.export_for_training instead.
+[2025-12-02 18:45:24,840][    INFO] Testing quantized model
+[2025-12-02 18:45:27,412][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 18:45:27,412][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 18:45:27,412][    INFO]  
+[2025-12-02 18:45:27,412][    INFO] ==================================================================================================
+[2025-12-02 18:45:27,412][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 18:45:27,413][    INFO]    0.987,    0.998,    1.000,    0.025,    0.009,    0.172,    0.053,    0.011,    0.053,    2.389
+[2025-12-02 18:45:27,413][    INFO] ==================================================================================================
+
+Size (quantized): 27.35 MB
+No CUDA runtime is found, using CUDA_HOME='/home/tand/miniconda3/envs/cs523'
+[2025-12-02 18:45:51,052][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 18:45:51,053][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 18:45:51,053][    INFO]  
+[2025-12-02 18:45:51,053][    INFO] ==================================================================================================
+[2025-12-02 18:45:51,053][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 18:45:51,053][    INFO]    0.987,    0.998,    1.000,    0.025,    0.008,    0.170,    0.053,    0.010,    0.053,   22.565
+[2025-12-02 18:45:51,053][    INFO] ==================================================================================================
+
+Size (optimized): 27.36 MB

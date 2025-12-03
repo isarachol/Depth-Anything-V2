@@ -1,0 +1,33 @@
+xFormers not available
+xFormers not available
+[2025-12-02 15:43:43,690][    INFO] {'bs': 2,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'load_from': '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth',
+ 'lr': 5e-06,
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'outdir': 'ptq_log'}
+
+[2025-12-02 15:43:43,691][    INFO] Using "cpu"
+Device: "cpu"
+Size (full): 99.22 MB
+[2025-12-02 15:43:50,335][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 15:43:50,335][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 15:43:50,335][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 15:43:50,336][    INFO]  
+[2025-12-02 15:43:50,336][    INFO] ==================================================================================================
+[2025-12-02 15:43:50,336][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 15:43:50,336][    INFO]    0.997,    0.999,    1.000,    0.022,    0.005,    0.158,    0.037,    0.009,    0.036,    3.669
+[2025-12-02 15:43:50,336][    INFO] ==================================================================================================
+[2025-12-02 15:43:59,720][    INFO] Performance of model from "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/exp/HyperSim/ai_003_009/vits_HyperSim_v1.pth"
+[2025-12-02 15:43:59,720][    INFO] Measured over "1" samples of training data from "HyperSim" dataset
+[2025-12-02 15:43:59,720][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-02 15:43:59,720][    INFO]  
+[2025-12-02 15:43:59,721][    INFO] ==================================================================================================
+[2025-12-02 15:43:59,721][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-02 15:43:59,721][    INFO]    0.997,    0.999,    1.000,    0.022,    0.005,    0.158,    0.037,    0.009,    0.036,    3.722
+[2025-12-02 15:43:59,721][    INFO] ==================================================================================================
+Size (quantized): 98.91 MB

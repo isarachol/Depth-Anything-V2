@@ -1,0 +1,45 @@
+xFormers not available
+xFormers not available
+cpu
+Progress 1/1: /home/tand/Documents/class/cs523/project/depth_anything_v2/HyperSim/all/ai_003_009/images/scene_cam_00_final_preview/frame.0000.color.jpg
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/run.py", line 132, in <module>
+    cProfile.run('main()', 'profile_results.prof')
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 17, in run
+    return _pyprofile._Utils(Profile).run(statement, filename, sort)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/profile.py", line 54, in run
+    prof.run(statement)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 96, in run
+    return self.runctx(cmd, dict, dict)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/cProfile.py", line 101, in runctx
+    exec(cmd, globals, locals)
+  File "<string>", line 1, in <module>
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/run.py", line 81, in main
+    depth = depth_anything.infer_image(raw_image, args.input_size) # metric
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py", line 191, in infer_image
+    depth = self.forward(image)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py", line 181, in forward
+    features = self.pretrained.get_intermediate_layers(x, self.intermediate_layer_idx[self.encoder], return_class_token=True)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 308, in get_intermediate_layers
+    outputs = self._get_intermediate_layers_not_chunked(x, n)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 272, in _get_intermediate_layers_not_chunked
+    x = self.prepare_tokens_with_masks(x)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 214, in prepare_tokens_with_masks
+    x = self.patch_embed(x)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/patch_embed.py", line 76, in forward
+    x = self.proj(x)  # B C H W
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same

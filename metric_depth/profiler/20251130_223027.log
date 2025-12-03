@@ -1,0 +1,20 @@
+Sun Nov 30 22:30:29 2025    profile_results.prof
+
+         4149 function calls (4055 primitive calls) in 0.001 seconds
+
+   Ordered by: internal time
+   List reduced from 186 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    18/11    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/sre_parse.py:494(_parse)
+     33/8    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/sre_compile.py:87(_compile)
+       32    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/posixpath.py:71(join)
+        8    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/gettext.py:542(find)
+       40    0.000    0.000    0.001    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/re.py:288(_compile)
+       16    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/gettext.py:211(_expand_lang)
+       10    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/argparse.py:1399(add_argument)
+       32    0.000    0.000    0.000    0.000 {built-in method posix.stat}
+      626    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     13/8    0.000    0.000    0.000    0.000 /home/tand/miniconda3/envs/cs523/lib/python3.10/sre_parse.py:436(_parse_sub)
+
+
