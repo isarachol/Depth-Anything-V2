@@ -47,7 +47,7 @@ def main():
     depth_anything = DepthAnythingV2(**{**model_configs[args.encoder], 'max_depth': args.max_depth})
 
     # extract state dict from pre trained model
-    if 'checkpoints' in args.load_from or 'PTQ' in args.load_from:
+    if 'checkpoints' in args.load_from or 'PTQ' in args.load_from or 'QAT' in args.load_from:
         new_state_dict = torch.load(args.load_from, map_location='cpu')
         name = '_checkpoint_'
         if 'newpyt' in args.load_from:
@@ -62,6 +62,9 @@ def main():
         for key, val in pretrained_state_dict.items():
             new_key = key.replace("module.", "", 1)
             new_state_dict[new_key] = val
+
+
+    new_state_dict = torch.load(args.load_from, map_location='cpu')
 
     depth_anything.load_state_dict(new_state_dict, strict=False) # added strict = False
     depth_anything = depth_anything.to(DEVICE).eval()
@@ -139,7 +142,8 @@ def main():
     print(f'Inferring depth of {len(filenames)} images in {elapsed_t:.2f} sec = {elapsed_t/len(filenames):.2f} s/img')
 
 if __name__ == '__main__':
-    cProfile.run('main()', 'profile_results.prof')
+    # cProfile.run('main()', 'profile_results.prof')
 
-    stats = pstats.Stats('profile_results.prof')
-    stats.sort_stats('time').print_stats(10)
+    # stats = pstats.Stats('profile_results.prof')
+    # stats.sort_stats('time').print_stats(10)
+    main()

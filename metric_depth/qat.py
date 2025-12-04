@@ -15,7 +15,7 @@ import random
 
 from packaging import version
 
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
 from torch.optim import AdamW
@@ -26,6 +26,9 @@ from util.loss import SiLogLoss
 from util.metric import eval_depth
 from util.utils import init_log
 from add_v_cbar import add_v_cbar
+
+# force using cpu
+# torch.cuda.is_available = lambda: False
 
 # parse arguments
 parser = argparse.ArgumentParser(description='Depth Anything V2 Metric Depth Estimation')
@@ -45,7 +48,7 @@ parser.add_argument('--lr', default=0.000005, type=float)
 
 args = parser.parse_args()
 
-# find device
+# find device 'cpu' #
 DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
 
 # setup logger
@@ -100,6 +103,7 @@ def estimate_latency(model, example_input, model_name, repetitions=50):
     print()
     logger.info(f'Estimate latency of {model_name} with same input')
     logger.info(f'Time per sample (ms): {np.mean(timings)} +- {np.std(timings)}')
+    print_size_of_model(model, tag=model_name)
 
     return np.mean(timings), np.std(timings)
 
@@ -310,7 +314,7 @@ def test(model, testloader, model_name, limit=None):
     return results
 
 def main():
-    need_train = True
+    need_train = False
     logger.info(f'Using "{DEVICE}"')
 
     if need_train:
@@ -345,9 +349,9 @@ def main():
         os.makedirs(args.save_path, exist_ok=True)
         # Set up model
         checkpoint = get_model()
-        depth_anything = checkpoint
-        print_size_of_model(depth_anything, "checkpoint") # before quantization
-        _ = test(depth_anything, testloader, "rel_checkpoint", limit=test_lim) # averaged --> quality + time
+        depth_anything1 = checkpoint
+        print_size_of_model(depth_anything1, "checkpoint") # before quantization
+        _ = test(depth_anything1, testloader, "rel_checkpoint", limit=test_lim) # averaged --> quality + time
 
         # ===================================================================================
         # QUANTIZATION AWARE TRAINING
@@ -357,24 +361,35 @@ def main():
 
         # prepare: swap `torch.nn.Linear` -> `FakeQuantizedLinear`
         base_config = Int8DynamicActivationInt4WeightConfig(group_size=128)
-        quantize_(depth_anything, QATConfig(base_config, step="prepare"))
+        quantize_(depth_anything1, QATConfig(base_config, step="prepare"))
 
         # fine-tune --> fake quantization
-        train_loop(depth_anything, trainloader, valloader)
-        finetuned = depth_anything
-        torch.save(finetuned.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v2.pth'))
-        print_size_of_model(depth_anything, "finetuned")
-        _ = test(finetuned, testloader, "metric_finetuned", limit=test_lim)
+        train_loop(depth_anything1, trainloader, valloader)
+        finetuned1 = depth_anything1
+        torch.save(finetuned1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v2.pth'))
+        print_size_of_model(depth_anything1, "finetuned")
+        _ = test(finetuned1, testloader, "metric_finetuned", limit=test_lim)
 
         # convert: swap `FakeQuantizedLinear` -> `torch.nn.Linear`, then quantize using `base_config`
-        quantize_(depth_anything, QATConfig(base_config, step="convert"))
-        torch.save(depth_anything.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v2.pth'))
+        quantize_(depth_anything1, QATConfig(base_config, step="convert"))
+        torch.save(depth_anything1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v2.pth'))
 
-        print_size_of_model(depth_anything, "quantized")
-        _ = test(depth_anything, testloader, "quantized", limit=test_lim) # averaged --> quality + time
+        print_size_of_model(depth_anything1, "quantized")
+        _ = test(depth_anything1, testloader, "quantized", limit=test_lim) # averaged --> quality + time
         writer.close()
 
-    else:
+        # ===================================================================================
+        # COMPARE INFERENCE TIME
+        # ===================================================================================
+        
+        example_input = torch.rand(1, 3, 518, 686).to(DEVICE).float()
+
+        estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
+        estimate_latency(finetuned1, example_input, "finetuned", repetitions=50)
+        estimate_latency(depth_anything1, example_input, "quantized", repetitions=50)
+        logger.info("End of program")
+
+    else: # load models
         model_configs = {
             'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
             'vitb': {'encoder': 'vitb', 'features': 128, 'out_channels': [96, 192, 384, 768]},
@@ -383,31 +398,63 @@ def main():
         }
     
         checkpoint = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
-        finetuned = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
-        depth_anything = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        finetuned1 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        depth_anything1 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        finetuned2 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        depth_anything2 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
 
-        metric_cp_path = 'QAT/'
-        finetuned_path = ''
-        quantized_path = ''
+        metric_cp_path = '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/checkpoints/depth_anything_v2_metric_hypersim_vits.pth'
+        finetuned1_path = 'QAT/int8_group32/vits_HyperSim_finetuned_v1.pth'
+        quantized1_path = 'QAT/int8_group32/vits_HyperSim_quantized_int8_v1.pth'
+        finetuned2_path = 'QAT/int8_group128/vits_HyperSim_finetuned_v2.pth'
+        quantized2_path = 'QAT/int8_group128/vits_HyperSim_quantized_int8_v2.pth'
 
+        import torchao
+        torch.serialization.add_safe_globals([torchao.quantization.linear_activation_quantized_tensor.LinearActivationQuantizedTensor])
         metric_cp_state = torch.load(metric_cp_path, map_location='cpu')
-        finetuned_state = torch.load(finetuned_path, map_location='cpu')
-        quantized_state = torch.load(quantized_path, map_location='cpu')
+        finetuned1_state = torch.load(finetuned1_path, map_location='cpu')
+        quantized1_state = torch.load(quantized1_path, map_location='cpu')
+        finetuned2_state = torch.load(finetuned2_path, map_location='cpu')
+        quantized2_state = torch.load(quantized2_path, map_location='cpu')
 
-        checkpoint.load_state_dict(metric_cp_state).to(DEVICE)
-        finetuned.load_state_dict(finetuned_state).to(DEVICE)
-        depth_anything.load_state_dict(quantized_state).to(DEVICE)
+        checkpoint.load_state_dict(metric_cp_state)
+        finetuned1.load_state_dict(finetuned1_state)
+        depth_anything1.load_state_dict(finetuned1_state)
+        finetuned2.load_state_dict(finetuned2_state)
+        depth_anything2.load_state_dict(finetuned2_state)
 
-    # ===================================================================================
-    # COMPARE INFERENCE TIME
-    # ===================================================================================
+        from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig
+        from torchao.quantization.qat import QATConfig
 
-    example_input = torch.rand(1, 3, 518, 686).to(DEVICE).float()
+        base_config1 = Int8DynamicActivationInt4WeightConfig(group_size=32)
+        base_config2 = Int8DynamicActivationInt4WeightConfig(group_size=128)
+        quantize_(depth_anything1, QATConfig(base_config1, step="prepare"))
+        quantize_(depth_anything1, QATConfig(base_config1, step="convert"))
+        quantize_(depth_anything2, QATConfig(base_config2, step="prepare"))
+        quantize_(depth_anything2, QATConfig(base_config2, step="convert"))
 
-    estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
-    estimate_latency(finetuned, example_input, "finetuned", repetitions=50)
-    estimate_latency(depth_anything, example_input, "quantized", repetitions=50)
-    logger.info("End of program")
+        depth_anything1.load_state_dict(quantized1_state)
+        depth_anything2.load_state_dict(quantized2_state)
+
+
+        checkpoint.to(DEVICE).eval()
+        finetuned1.to(DEVICE).eval()
+        depth_anything1.to(DEVICE).eval()
+        finetuned2.to(DEVICE).eval()
+        depth_anything2.to(DEVICE).eval()
+
+        # ===================================================================================
+        # COMPARE INFERENCE TIME
+        # ===================================================================================
+
+        example_input = torch.rand(1, 3, 518, 686).to(DEVICE).float()
+
+        estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
+        estimate_latency(finetuned1, example_input, "finetuned1", repetitions=50)
+        estimate_latency(depth_anything1, example_input, "quantized1", repetitions=50)
+        estimate_latency(finetuned2, example_input, "finetuned2", repetitions=50)
+        estimate_latency(depth_anything2, example_input, "quantized2", repetitions=50)
+        logger.info("End of program")
 
 
 if __name__ == '__main__':
