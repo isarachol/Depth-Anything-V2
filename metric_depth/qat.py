@@ -47,7 +47,6 @@ args = parser.parse_args()
 
 # find device
 DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
-print(f'Device: "{DEVICE}"')
 
 # setup logger
 logger = init_log('global', logging.INFO)
@@ -79,7 +78,7 @@ class Timer:
         else:
             return (time.time() - self.start_time) * 1000 # s ==> * 1000  # ms
 
-def estimate_latency(model, example_inputs, repetitions=50):
+def estimate_latency(model, example_input, model_name, repetitions=50):
     """
     Returns avg and std inference latency (ms) over given runs.
     """
@@ -89,14 +88,18 @@ def estimate_latency(model, example_inputs, repetitions=50):
 
     # warm-up
     for _ in range(5):
-        _ = model(example_inputs)
+        _ = model(example_input)
 
     with torch.no_grad():
         for rep in range(repetitions):
             timer.start()
-            _ = model(example_inputs)
+            _ = model(example_input)
             elapsed = timer.stop()
             timings[rep] = elapsed
+    
+    print()
+    logger.info(f'Estimate latency of {model_name} with same input')
+    logger.info(f'Time per sample (ms): {np.mean(timings)} +- {np.std(timings)}')
 
     return np.mean(timings), np.std(timings)
 
@@ -120,7 +123,7 @@ def print_size_of_model(model, tag=""):
     
     torch.save(model.state_dict(), "temp.p")
     size_mb_full = os.path.getsize("temp.p") / 1e6
-    print(f"Size ({tag}): {size_mb_full:.2f} MB")
+    logger.info(f"Size ({tag}): {size_mb_full:.2f} MB")
     os.remove("temp.p")
 
 def get_model():
@@ -134,15 +137,15 @@ def get_model():
     depth_anything = DepthAnythingV2(**{**model_configs[args.encoder], 'max_depth': args.max_depth})
 
     # extract state dict from pre trained model
-    if 'checkpoints' in args.pretrained_from:
-        new_state_dict = torch.load(args.pretrained_from, map_location='cpu')
-    else: # for finetuned version
-        pretrained_state_dict = torch.load(args.load_from, map_location='cpu')['model'] 
-        new_state_dict = {}
+    # if 'checkpoints' in args.pretrained_from:
+    new_state_dict = torch.load(args.pretrained_from, map_location='cpu') # should be fine now
+    # else: # for finetuned version
+    #     pretrained_state_dict = torch.load(args.load_from, map_location='cpu')
+    #     new_state_dict = {}
 
-        for key, val in pretrained_state_dict.items():
-            new_key = key.replace("module.", "", 1)
-            new_state_dict[new_key] = val
+    #     for key, val in pretrained_state_dict.items():
+    #         new_key = key.replace("module.", "", 1)
+    #         new_state_dict[new_key] = val
 
     depth_anything.load_state_dict(new_state_dict)
     return depth_anything.to(DEVICE)
@@ -269,7 +272,7 @@ def test(model, testloader, model_name, limit=None):
     for i, sample in enumerate(testloader):
         
         img, depth, valid_mask = sample['image'].to(DEVICE).float(), sample['depth'][0].to(DEVICE), sample['valid_mask'][0].to(DEVICE) #.float()
-        
+
         with torch.no_grad():
             timer.start()
             pred = model(img)
@@ -307,68 +310,104 @@ def test(model, testloader, model_name, limit=None):
     return results
 
 def main():
-    test_lim = args.test_lim
-    print(os.getcwd())
+    need_train = True
     logger.info(f'Using "{DEVICE}"')
 
-    # ===================================================================================
-    # Set up dataset
-    # ===================================================================================
-    size = (args.img_size, args.img_size) # not really used --> we assume fixed input image size and quantize based on that size
+    if need_train:
+        test_lim = args.test_lim # =========================================== DELETE ===========================================
 
-    if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
-        trainset = Hypersim('/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/dataset/splits/HyperSim/train.txt', 'train', size=size)
+        # ===================================================================================
+        # Set up dataset
+        # ===================================================================================
+        size = (args.img_size, args.img_size) # not really used --> we assume fixed input image size and quantize based on that size
+
+        if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
+            trainset = Hypersim('dataset/splits/HyperSim/train.txt', 'train', size=size)
+        else:
+            raise NotImplementedError
+        trainloader = DataLoader(trainset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True) # not meant to train, delete?
+
+        # calibration_set = Subset(trainset, range(128)) # pick only the first 256 images for calibration
+        # calibration_loader = DataLoader(calibration_set, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
+
+        if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
+            valset = Hypersim('dataset/splits/HyperSim/val.txt', 'val', size=size)
+        else:
+            raise NotImplementedError
+        valloader = DataLoader(valset, batch_size=1, pin_memory=True, num_workers=4, drop_last=True)
+
+        if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
+            testset = Hypersim('dataset/splits/HyperSim/test.txt', 'test', size=size)
+        else:
+            raise NotImplementedError
+        testloader = DataLoader(testset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
+        
+        os.makedirs(args.save_path, exist_ok=True)
+        # Set up model
+        checkpoint = get_model()
+        depth_anything = checkpoint
+        print_size_of_model(depth_anything, "checkpoint") # before quantization
+        _ = test(depth_anything, testloader, "rel_checkpoint", limit=test_lim) # averaged --> quality + time
+
+        # ===================================================================================
+        # QUANTIZATION AWARE TRAINING
+        # ===================================================================================
+        from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig
+        from torchao.quantization.qat import QATConfig
+
+        # prepare: swap `torch.nn.Linear` -> `FakeQuantizedLinear`
+        base_config = Int8DynamicActivationInt4WeightConfig(group_size=32)
+        quantize_(depth_anything, QATConfig(base_config, step="prepare"))
+
+        # fine-tune --> fake quantization
+        train_loop(depth_anything, trainloader, valloader)
+        finetuned = depth_anything
+        torch.save(finetuned.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v1.pth'))
+        print_size_of_model(depth_anything, "finetuned")
+        _ = test(finetuned, testloader, "metric_finetuned", limit=test_lim)
+
+        # convert: swap `FakeQuantizedLinear` -> `torch.nn.Linear`, then quantize using `base_config`
+        quantize_(depth_anything, QATConfig(base_config, step="convert"))
+        torch.save(depth_anything.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v1.pth'))
+
+        print_size_of_model(depth_anything, "quantized")
+        _ = test(depth_anything, testloader, "quantized", limit=test_lim) # averaged --> quality + time
+        writer.close()
+
     else:
-        raise NotImplementedError
-    trainloader = DataLoader(trainset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True) # not meant to train, delete?
-
-    # calibration_set = Subset(trainset, range(128)) # pick only the first 256 images for calibration
-    # calibration_loader = DataLoader(calibration_set, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
-
-    if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
-        valset = Hypersim('dataset/splits/HyperSim/val.txt', 'val', size=size)
-    else:
-        raise NotImplementedError
-    valloader = DataLoader(valset, batch_size=1, pin_memory=True, num_workers=4, drop_last=True)
-
-    if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
-        testset = Hypersim('/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/dataset/splits/HyperSim/test.txt', 'test', size=size)
-    else:
-        raise NotImplementedError
-    testloader = DataLoader(testset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
+        model_configs = {
+            'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
+            'vitb': {'encoder': 'vitb', 'features': 128, 'out_channels': [96, 192, 384, 768]},
+            'vitl': {'encoder': 'vitl', 'features': 256, 'out_channels': [256, 512, 1024, 1024]},
+            'vitg': {'encoder': 'vitg', 'features': 384, 'out_channels': [1536, 1536, 1536, 1536]}
+        }
     
-    os.makedirs(args.save_path, exist_ok=True)
-    # Set up model
-    checkpoint = get_model()
-    depth_anything = checkpoint
-    print_size_of_model(depth_anything, "checkpoint") # before quantization
-    _ = test(depth_anything, testloader, "rel_checkpoint", limit=test_lim) # averaged --> quality + time
+        checkpoint = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        finetuned = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        depth_anything = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+
+        metric_cp_path = 'QAT/'
+        finetuned_path = ''
+        quantized_path = ''
+
+        metric_cp_state = torch.load(metric_cp_path, map_location='cpu')
+        finetuned_state = torch.load(finetuned_path, map_location='cpu')
+        quantized_state = torch.load(quantized_path, map_location='cpu')
+
+        checkpoint.load_state_dict(metric_cp_state).to(DEVICE)
+        finetuned.load_state_dict(finetuned_state).to(DEVICE)
+        depth_anything.load_state_dict(quantized_state).to(DEVICE)
 
     # ===================================================================================
-    # QUANTIZATION AWARE TRAINING
+    # COMPARE INFERENCE TIME
     # ===================================================================================
-    from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig
-    from torchao.quantization.qat import QATConfig
 
-    # prepare: swap `torch.nn.Linear` -> `FakeQuantizedLinear`
-    base_config = Int8DynamicActivationInt4WeightConfig(group_size=32)
-    quantize_(depth_anything, QATConfig(base_config, step="prepare"))
+    example_input = torch.rand(1, 3, 518, 686).to(DEVICE).float()
 
-    # fine-tune --> fake quantization
-    train_loop(depth_anything, trainloader, valloader)
-    finetuned = depth_anything
-    torch.save(finetuned.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_fiinetuned_v1.pth'))
-    print_size_of_model(depth_anything, "finetuned")
-    _ = test(finetuned, testloader, "metric_finetuned", limit=test_lim)
-
-    # convert: swap `FakeQuantizedLinear` -> `torch.nn.Linear`, then quantize using `base_config`
-    quantize_(depth_anything, QATConfig(base_config, step="convert"))
-    torch.save(depth_anything.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v1.pth'))
-
-    print_size_of_model(depth_anything, "quantized")
-    _ = test(depth_anything, testloader, "quantized", limit=test_lim) # averaged --> quality + time
-    writer.close()
-    print("End of program")
+    estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
+    estimate_latency(finetuned, example_input, "finetuned", repetitions=50)
+    estimate_latency(depth_anything, example_input, "quantized", repetitions=50)
+    logger.info("End of program")
 
 
 if __name__ == '__main__':
