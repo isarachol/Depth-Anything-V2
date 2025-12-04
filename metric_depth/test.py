@@ -46,12 +46,12 @@ def main():
     
     all_args = {**vars(args), 'ngpus': 0} # world_size
     logger.info('{}\n'.format(pprint.pformat(all_args)))
-    writer = SummaryWriter(args.save_path)
+    # writer = SummaryWriter(args.save_path)
         
     size = (args.img_size, args.img_size)
 
     if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
-        testset = Hypersim('metric_depth/dataset/splits/HyperSim/test.txt', 'test', size=size)
+        testset = Hypersim('dataset/splits/HyperSim/test.txt', 'test', size=size)
     else:
         raise NotImplementedError
     # testsampler = torch.utils.data.distributed.DistributedSampler(testset)
@@ -69,35 +69,35 @@ def main():
     model = DepthAnythingV2(**{**model_configs[args.encoder], 'max_depth': args.max_depth})
 
     # extract state dict from pre trained model
-    if ('PTQ' in args.load_from):
-        model_ep = torch.export.load(args.load_from)
-        model = model_ep.module()
-    else:
-        if ('checkpoints' in args.load_from):
-            new_state_dict = torch.load(args.load_from, map_location='cpu')
-        # elif ('PTQ' in args.load_from):
-        #     quantized_state_dict = torch.load(args.load_from, map_location='cpu')
-        #     new_state_dict = {}
-        #     wrong_keys = []
+    # if ('PTQ' in args.load_from):
+    #     model_ep = torch.export.load(args.load_from)
+    #     model = model_ep.module()
+    # else:
+    if ('checkpoints' in args.load_from) or ('PTQ' in args.load_from):
+        new_state_dict = torch.load(args.load_from, map_location='cpu')
+    # elif ('PTQ' in args.load_from):
+    #     quantized_state_dict = torch.load(args.load_from, map_location='cpu')
+    #     new_state_dict = {}
+    #     wrong_keys = []
 
-        #     for key, val in quantized_state_dict.items():
-        #         # if '' in key:
-        #         # new_key = 
-        #         wrong_keys.append(key)
+    #     for key, val in quantized_state_dict.items():
+    #         # if '' in key:
+    #         # new_key = 
+    #         wrong_keys.append(key)
 
-        #     with open('wrong_keys.txt', 'w') as f:
-        #         for key in wrong_keys:
-        #             f.write(key + '\n')
+    #     with open('wrong_keys.txt', 'w') as f:
+    #         for key in wrong_keys:
+    #             f.write(key + '\n')
 
-        else: # if pretrained (by distributed), rename keys
-            pretrained_state_dict = torch.load(args.load_from, map_location='cpu')['model']
-            new_state_dict = {}
+    else: # if pretrained (by distributed), rename keys
+        pretrained_state_dict = torch.load(args.load_from, map_location='cpu')['model']
+        new_state_dict = {}
 
-            for key, val in pretrained_state_dict.items():
-                new_key = key.replace("module.", "", 1)
-                new_state_dict[new_key] = val
+        for key, val in pretrained_state_dict.items():
+            new_key = key.replace("module.", "", 1)
+            new_state_dict[new_key] = val
 
-        model.load_state_dict(new_state_dict)
+    model.load_state_dict(new_state_dict, strict=False)
 
     model = model.to(DEVICE).eval() # set to eval mode
     
@@ -147,8 +147,8 @@ def main():
     logger.info('==================================================================================================')
     print()
         
-    for name, metric in results.items():
-        writer.add_scalar(f'eval/{name}', (metric / nsamples).item(), epoch)
+    # for name, metric in results.items():
+        # writer.add_scalar(f'eval/{name}', (metric / nsamples).item(), epoch)
     
 if __name__ == '__main__':
     main()

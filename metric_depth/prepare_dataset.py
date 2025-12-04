@@ -16,14 +16,15 @@ def get_all_file_paths(feature_dir, label_dir, label_type):
     data_paths = []
     for (_,_,files) in os.walk(feature_dir):
         for file in files:
-            x_path = os.path.join(feature_dir, file) # just string concat
-            label_file = file[0:11]+label_type # frame.####.(label_type)
-            y_path = os.path.join(label_dir, label_file)
-            if os.path.exists(y_path):
-                line_path = x_path + " " + y_path
-                data_paths.append(line_path)
-            else:
-                print("y_path doesn't exist!")
+            if 'tonemap' in file: # only use tonemap images
+                x_path = os.path.join(feature_dir, file) # just string concat
+                label_file = file[0:11]+label_type # frame.####.(label_type)
+                y_path = os.path.join(label_dir, label_file)
+                if os.path.exists(y_path):
+                    line_path = x_path + " " + y_path
+                    data_paths.append(line_path)
+                else:
+                    print("y_path doesn't exist!")
     return data_paths
 
 dataset = "HyperSim"

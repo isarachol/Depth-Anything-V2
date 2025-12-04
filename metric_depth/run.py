@@ -8,6 +8,7 @@ import torch
 import time
 import cProfile
 import pstats
+from datetime import datetime
 
 from depth_anything_v2.dpt import DepthAnythingV2
 from add_v_cbar import add_v_cbar
@@ -46,17 +47,23 @@ def main():
     depth_anything = DepthAnythingV2(**{**model_configs[args.encoder], 'max_depth': args.max_depth})
 
     # extract state dict from pre trained model
-    if 'checkpoints' in args.load_from:
+    if 'checkpoints' in args.load_from or 'PTQ' in args.load_from:
         new_state_dict = torch.load(args.load_from, map_location='cpu')
+        name = '_checkpoint_'
+        if 'newpyt' in args.load_from:
+            name = '_newpyt_'
+        elif 'oldpyt' in args.load_from:
+            name = '_oldpyt_'
     else:
         pretrained_state_dict = torch.load(args.load_from, map_location='cpu')['model']
         new_state_dict = {}
+        name = '_finetuned_'
 
         for key, val in pretrained_state_dict.items():
             new_key = key.replace("module.", "", 1)
             new_state_dict[new_key] = val
 
-    depth_anything.load_state_dict(new_state_dict) # added ['model']
+    depth_anything.load_state_dict(new_state_dict, strict=False) # added strict = False
     depth_anything = depth_anything.to(DEVICE).eval()
     
     if os.path.isfile(args.img_path):
@@ -76,8 +83,9 @@ def main():
     elapsed_t = 0
     for k, filename in enumerate(filenames):
         print(f'Progress {k+1}/{len(filenames)}: {filename}')
-        
+
         raw_image = cv2.imread(filename)
+        print(raw_image.shape)
         
         start_t = time.time()
         depth = depth_anything.infer_image(raw_image, args.input_size) # metric
@@ -117,7 +125,7 @@ def main():
         # Isara: for edges along width direction
         white_edge_h = np.ones((height+2*edge_thickness, edge_thickness, 3), dtype=np.uint8) * 255
 
-        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '.png')
+        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + name + datetime.now().strftime("%Y-%m-%d %H:%M:%S") + '.png')
         if args.pred_only:
             depth = cv2.hconcat([white_edge_h, depth, white_edge_h]) # Isara
             cv2.imwrite(output_path, depth)

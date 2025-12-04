@@ -1,0 +1,23 @@
+xFormers not available
+xFormers not available
+[2025-12-03 00:53:19,404][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'PTQ/result_selected/torch.ao/128calibration/vits_HyperSim_pqt_oldpyt_nonstrict_x86_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_quantized'}
+
+[2025-12-03 01:08:47,430][    INFO] Performance of model from "PTQ/result_selected/torch.ao/128calibration/vits_HyperSim_pqt_oldpyt_nonstrict_x86_v1.pth"
+[2025-12-03 01:08:47,430][    INFO] Measured over "360.0" samples of training data from "HyperSim" dataset
+[2025-12-03 01:08:47,430][    INFO] Using "cpu"
+[2025-12-03 01:08:47,430][    INFO] Total run time is 928.026 s
+[2025-12-03 01:08:47,430][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-03 01:08:47,430][    INFO]  
+[2025-12-03 01:08:47,430][    INFO] ==================================================================================================
+[2025-12-03 01:08:47,430][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-03 01:08:47,430][    INFO]    0.162,    0.305,    0.507,    1.408,   10.084,    5.377,    0.809,    0.319,    0.632,    2.556
+[2025-12-03 01:08:47,430][    INFO] ==================================================================================================
+

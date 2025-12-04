@@ -1,0 +1,20 @@
+xFormers not available
+xFormers not available
+[2025-12-03 00:19:11,889][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'PTQ/result_selected/torch.ao/128calibration/vits_HyperSim_pqt_oldpyt_nonstrict_x86_v1.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_quantized'}
+
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 154, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/test.py", line 54, in main
+    testset = Hypersim('metric_depth/dataset/splits/HyperSim/test.txt', 'test', size=size)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/dataset/hypersim.py", line 32, in __init__
+    with open(filelist_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'metric_depth/dataset/splits/HyperSim/test.txt'

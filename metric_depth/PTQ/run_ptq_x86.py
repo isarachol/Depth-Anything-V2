@@ -249,7 +249,7 @@ def main():
         raise NotImplementedError
     trainloader = DataLoader(trainset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True) # not meant to train, delete?
 
-    calibration_set = Subset(trainset, range(256)) # pick only the first 256 images for calibration
+    calibration_set = Subset(trainset, range(128)) # pick only the first 256 images for calibration
     calibration_loader = DataLoader(calibration_set, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
 
     if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
@@ -317,8 +317,9 @@ def main():
 
     # save model
     quantized_export_path = os.path.join(args.outdir, f'{args.encoder}_{args.dataset}_pqt_{args.pyt_ver}_{args.strict}_x86_v1.pth')
-    quantized_ep = torch.export.export(quantized_model, example_inputs)
-    torch.export.save(quantized_ep, quantized_export_path)
+    # quantized_ep = torch.export.export(quantized_model, example_inputs)
+    # torch.export.save(quantized_ep, quantized_export_path)
+    torch.save(quantized_model.state_dict(), quantized_export_path)
 
     # ===================================================================================
     # Optimize with CPP
@@ -336,8 +337,10 @@ def main():
 
     # save optimized model
     optimized_model_path = os.path.join(args.outdir, f'{args.encoder}_{args.dataset}_pqt_opt_{args.pyt_ver}_{args.strict}_x86_v1.pth')
-    optimized_ep = torch.export.export(optimized_model, example_inputs)
-    torch.export.save(optimized_ep, optimized_model_path)
+    # optimized_ep = torch.export.export(optimized_model, example_inputs)
+    # torch.export.save(optimized_ep, optimized_model_path)
+    torch.save(optimized_model.state_dict(), optimized_model_path)
+
 
     # get optimized model size
     print_size_of_model(optimized_model, "optimized")

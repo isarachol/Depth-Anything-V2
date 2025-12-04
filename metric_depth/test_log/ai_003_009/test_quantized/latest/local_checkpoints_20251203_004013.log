@@ -1,0 +1,23 @@
+xFormers not available
+xFormers not available
+[2025-12-03 00:40:14,727][    INFO] {'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'img_size': 518,
+ 'input_size': 518,
+ 'load_from': 'checkpoints/depth_anything_v2_metric_hypersim_vits.pth',
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'save_path': 'test_log/ai_003_009/test_quantized'}
+
+[2025-12-03 00:53:16,673][    INFO] Performance of model from "checkpoints/depth_anything_v2_metric_hypersim_vits.pth"
+[2025-12-03 00:53:16,674][    INFO] Measured over "360.0" samples of training data from "HyperSim" dataset
+[2025-12-03 00:53:16,674][    INFO] Using "cpu"
+[2025-12-03 00:53:16,674][    INFO] Total run time is 781.947 s
+[2025-12-03 00:53:16,674][    INFO] Time is in seconds per sample (only for inference step)
+[2025-12-03 00:53:16,674][    INFO]  
+[2025-12-03 00:53:16,674][    INFO] ==================================================================================================
+[2025-12-03 00:53:16,674][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-03 00:53:16,674][    INFO]    0.764,    0.892,    0.927,    0.158,    0.348,    1.084,    0.214,    0.084,    0.169,    2.151
+[2025-12-03 00:53:16,674][    INFO] ==================================================================================================
+

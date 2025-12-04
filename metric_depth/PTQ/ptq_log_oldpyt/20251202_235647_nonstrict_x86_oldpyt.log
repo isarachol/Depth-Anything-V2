@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/PTQ/run_ptq_x86.py", line 24, in <module>
+    from depth_anything_v2.dpt import DepthAnythingV2
+ModuleNotFoundError: No module named 'depth_anything_v2'
