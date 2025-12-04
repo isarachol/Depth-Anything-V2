@@ -41,7 +41,7 @@ parser.add_argument('--save-path', type=str, default='./QAT')
 parser.add_argument('--bs', default=1, type=int) # ========================= CHANGE to 128 ====================================
 parser.add_argument('--epochs', default=1, type=int) # change to 120
 parser.add_argument('--lr', default=0.000005, type=float)
-parser.add_argument('--test-lim', default=1, type=int)
+# parser.add_argument('--test-lim', default=1, type=int)
 
 args = parser.parse_args()
 
@@ -93,7 +93,7 @@ def estimate_latency(model, example_input, model_name, repetitions=50):
     with torch.no_grad():
         for rep in range(repetitions):
             timer.start()
-            _ = model(example_input)
+            x = model(example_input)
             elapsed = timer.stop()
             timings[rep] = elapsed
     
@@ -298,7 +298,7 @@ def test(model, testloader, model_name, limit=None):
             break
     
     print()
-    logger.info(f'Measured over "{nsamples}" samples of training data from "{args.dataset}" dataset')
+    logger.info(f'Measured over "{nsamples}" samples of testing data from "{args.dataset}" dataset')
     logger.info('Time is in ms per sample (only for inference step)')
     logger.info(' ')    
 
@@ -314,7 +314,7 @@ def main():
     logger.info(f'Using "{DEVICE}"')
 
     if need_train:
-        test_lim = args.test_lim # =========================================== DELETE ===========================================
+        test_lim = None
 
         # ===================================================================================
         # Set up dataset
@@ -356,19 +356,19 @@ def main():
         from torchao.quantization.qat import QATConfig
 
         # prepare: swap `torch.nn.Linear` -> `FakeQuantizedLinear`
-        base_config = Int8DynamicActivationInt4WeightConfig(group_size=32)
+        base_config = Int8DynamicActivationInt4WeightConfig(group_size=128)
         quantize_(depth_anything, QATConfig(base_config, step="prepare"))
 
         # fine-tune --> fake quantization
         train_loop(depth_anything, trainloader, valloader)
         finetuned = depth_anything
-        torch.save(finetuned.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v1.pth'))
+        torch.save(finetuned.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v2.pth'))
         print_size_of_model(depth_anything, "finetuned")
         _ = test(finetuned, testloader, "metric_finetuned", limit=test_lim)
 
         # convert: swap `FakeQuantizedLinear` -> `torch.nn.Linear`, then quantize using `base_config`
         quantize_(depth_anything, QATConfig(base_config, step="convert"))
-        torch.save(depth_anything.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v1.pth'))
+        torch.save(depth_anything.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v2.pth'))
 
         print_size_of_model(depth_anything, "quantized")
         _ = test(depth_anything, testloader, "quantized", limit=test_lim) # averaged --> quality + time
