@@ -1,0 +1,36 @@
+xFormers not available
+xFormers not available
+[2025-12-05 14:06:31,527][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT'}
+
+[2025-12-05 14:06:31,528][    INFO] Using "cpu"
+[2025-12-05 14:07:41,171][    INFO] Estimate latency of checkpoint with same input
+[2025-12-05 14:07:41,172][    INFO] Time per sample (ms): 1193.034963607788 +- 39.80121569964525
+[2025-12-05 14:07:41,223][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 14:08:46,277][    INFO] Estimate latency of finetuned1 with same input
+[2025-12-05 14:08:46,277][    INFO] Time per sample (ms): 1188.7705945968628 +- 23.41819621228046
+[2025-12-05 14:08:46,335][    INFO] Size (finetuned1): 99.22 MB
+[2025-12-05 14:10:03,451][    INFO] Estimate latency of quantized1 with same input
+[2025-12-05 14:10:03,451][    INFO] Time per sample (ms): 1423.9003419876099 +- 20.46169282769415
+[2025-12-05 14:10:03,490][    INFO] Size (quantized1): 40.86 MB
+[2025-12-05 14:11:08,273][    INFO] Estimate latency of finetuned2 with same input
+[2025-12-05 14:11:08,273][    INFO] Time per sample (ms): 1181.0660934448242 +- 19.46854880960194
+[2025-12-05 14:11:08,325][    INFO] Size (finetuned2): 99.22 MB
+[2025-12-05 14:12:29,152][    INFO] Estimate latency of quantized2 with same input
+[2025-12-05 14:12:29,152][    INFO] Time per sample (ms): 1503.8593339920044 +- 55.01912286771038
+[2025-12-05 14:12:29,187][    INFO] Size (quantized2): 36.88 MB
+[2025-12-05 14:12:29,190][    INFO] End of program
+
+
+
+
+

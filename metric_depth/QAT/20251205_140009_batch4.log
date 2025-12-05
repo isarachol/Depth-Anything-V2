@@ -1,0 +1,51 @@
+xFormers not available
+xFormers not available
+[2025-12-05 14:00:13,937][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20.0,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT'}
+
+[2025-12-05 14:00:13,938][    INFO] Using "cuda"
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 461, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 452, in main
+    estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 99, in estimate_latency
+    x = model(example_input)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py", line 181, in forward
+    features = self.pretrained.get_intermediate_layers(x, self.intermediate_layer_idx[self.encoder], return_class_token=True)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 308, in get_intermediate_layers
+    outputs = self._get_intermediate_layers_not_chunked(x, n)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2.py", line 277, in _get_intermediate_layers_not_chunked
+    x = blk(x)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/block.py", line 247, in forward
+    return super().forward(x_or_x_list)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/block.py", line 105, in forward
+    x = x + attn_residual_func(x)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/block.py", line 84, in attn_residual_func
+    return self.ls1(self.attn(self.norm1(x)))
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/attention.py", line 69, in forward
+    return super().forward(x)
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/depth_anything_v2/dinov2_layers/attention.py", line 54, in forward
+    attn = q @ k.transpose(-2, -1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 7.63 GiB of which 82.69 MiB is free. Including non-PyTorch memory, this process has 7.54 GiB memory in use. Of the allocated memory 7.10 GiB is allocated by PyTorch, and 326.77 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

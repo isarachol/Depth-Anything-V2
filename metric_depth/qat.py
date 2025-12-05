@@ -28,7 +28,7 @@ from util.utils import init_log
 from add_v_cbar import add_v_cbar
 
 # force using cpu
-# torch.cuda.is_available = lambda: False
+torch.cuda.is_available = lambda: False
 
 # parse arguments
 parser = argparse.ArgumentParser(description='Depth Anything V2 Metric Depth Estimation')
@@ -447,7 +447,7 @@ def main():
         # COMPARE INFERENCE TIME
         # ===================================================================================
 
-        example_input = torch.rand(1, 3, 518, 686).to(DEVICE).float()
+        example_input = torch.rand(2, 3, 518, 686).to(DEVICE).float()
 
         estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
         estimate_latency(finetuned1, example_input, "finetuned1", repetitions=50)
