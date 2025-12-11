@@ -27,3 +27,6 @@ The rest are less relevant. They are either unsuccessful attempts or previous ve
 
 ## Important notes
 - I ran in to trouble with torch not using cuda because of version mismatch and fixed that by uninstall torch and reinstalling it with specific cuda. I used `torch 2.8.0+cuda128` and `torchao 0.13.0`
+- Please refer to the main [DepthAnythingV2 GitHub](https://github.com/DepthAnything/Depth-Anything-V2) and [Hypersim GitHub](https://github.com/apple/ml-hypersim) for more information about the baseline and dataset.
+- The tutorial that helped me finish the project is [here](https://docs.pytorch.org/ao/stable/finetuning.html)
+- The explanation of quantization concepts that help me finish the poster and report is [here](https://www.youtube.com/watch?v=0VdNflU08yA&t=2434s)
