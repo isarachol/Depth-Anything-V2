@@ -133,22 +133,29 @@ def main():
         white_edge_h = np.ones((height+2*edge_thickness, edge_thickness, 3), dtype=np.uint8) * 255
 
         # prepare ground truth
-        vmax_true = depth_true.max()
-        vmin_true = depth_true.min()
+        vmax = depth_true.max()
+        vmin = depth_true.min()
 
-        depth_true = (depth_true - depth_true.min()) / (depth_true.max() - depth_true.min()) * 255.0
+        # find min/max
+        for key, model in models.items():
+            depth_inferred = model.infer_image(raw_image, args.input_size) # metric
+            # extract info
+            vmax = max(vmax, depth_inferred.max())
+            vmin = min(vmin, depth_inferred.min())
+
+        depth_true = (depth_true - vmin) / (vmax - vmin) * 255.0
         depth_true = depth_true.astype(np.uint8)
         depth_true = (cmap(depth_true)[:, :, :3] * 255)[:, :, ::-1].astype(np.uint8)
-        v_cbar_true = add_v_cbar(cmap, vmax_true, vmin_true, cbar_width, height, edge_thickness)
+        # v_cbar_true = add_v_cbar(cmap, vmax, vmin, cbar_width, height, edge_thickness)
 
         # add edges
         raw_image_padded = cv2.vconcat([white_edge_v, raw_image, white_edge_v])
         depth_true = cv2.vconcat([white_edge_v, depth_true, white_edge_v])
-        depth_true = cv2.hconcat([depth_true, split_region, v_cbar_true])
+        # depth_true = cv2.hconcat([depth_true, split_region, v_cbar_true])
         combined_result = cv2.hconcat([white_edge_h, raw_image_padded, split_region, depth_true])
 
         # set up output
-        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '.png')
+        output_path = os.path.join(args.outdir, os.path.splitext(os.path.basename(filename))[0] + '_report.png')
 
         for key, model in models.items():
 
@@ -158,22 +165,24 @@ def main():
             elapsed_t[key] += end_t - start_t
             
             # extract info
-            vmax = depth_inferred.max()
-            vmin = depth_inferred.min()
+            # vmax = depth_inferred.max()
+            # vmin = depth_inferred.min()
 
             # make color relative
-            depth_inferred = (depth_inferred - depth_inferred.min()) / (depth_inferred.max() - depth_inferred.min()) * 255.0
+            depth_inferred = (depth_inferred - vmin) / (vmax - vmin) * 255.0
             depth_inferred = depth_inferred.astype(np.uint8)
 
             depth_inferred = (cmap(depth_inferred)[:, :, :3] * 255)[:, :, ::-1].astype(np.uint8)
-            v_cbar = add_v_cbar(cmap, vmax, vmin, cbar_width, height, edge_thickness)
             
             # add edges and color bar
             depth_inferred = cv2.vconcat([white_edge_v, depth_inferred, white_edge_v])
-            depth_inferred = cv2.hconcat([depth_inferred, split_region, v_cbar])
+            depth_inferred = cv2.hconcat([depth_inferred, split_region])
 
             combined_result = cv2.hconcat([combined_result, split_region, depth_inferred])
         
+
+        v_cbar = add_v_cbar(cmap, vmax, vmin, cbar_width, height, edge_thickness)
+        combined_result = cv2.hconcat([combined_result, split_region, v_cbar])
         cv2.imwrite(output_path, combined_result)
 
     for key, _ in models.items():

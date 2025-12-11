@@ -1,0 +1,47 @@
+xFormers not available
+xFormers not available
+[2025-12-05 17:26:09,180][    INFO] {'bs': 4,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 120,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 17:26:09,181][    INFO] Using "cuda"
+[2025-12-05 17:26:09,652][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 17:26:09,660][    INFO] Testing rel_checkpoint model
+[2025-12-05 17:26:13,221][    INFO] Measured over "10" samples of testing data from "HyperSim" dataset
+[2025-12-05 17:26:13,221][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 17:26:13,221][    INFO]  
+[2025-12-05 17:26:13,221][    INFO] ==================================================================================================
+[2025-12-05 17:26:13,221][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 17:26:13,221][    INFO]    0.058,    0.154,    0.281,    2.826,   42.720,   11.529,    1.192,    0.467,    0.935,  308.306
+[2025-12-05 17:26:13,221][    INFO] ==================================================================================================
+
+
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 462, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 365, in main
+    quantize_(depth_anything1, QATConfig(base_config, step="prepare"))
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/quant_api.py", line 535, in quantize_
+    _replace_with_custom_fn_if_matches_filter(
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/quant_api.py", line 210, in _replace_with_custom_fn_if_matches_filter
+    new_child = _replace_with_custom_fn_if_matches_filter(
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/quant_api.py", line 210, in _replace_with_custom_fn_if_matches_filter
+    new_child = _replace_with_custom_fn_if_matches_filter(
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/quant_api.py", line 210, in _replace_with_custom_fn_if_matches_filter
+    new_child = _replace_with_custom_fn_if_matches_filter(
+  [Previous line repeated 2 more times]
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/quant_api.py", line 205, in _replace_with_custom_fn_if_matches_filter
+    model = replacement_fn(model, *extra_args)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/qat/api.py", line 205, in _qat_config_transform
+    (act_config, weight_config) = _infer_fake_quantize_configs(base_config)
+  File "/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torchao/quantization/qat/fake_quantize_config.py", line 424, in _infer_fake_quantize_configs
+    raise ValueError("Unexpected base config: %s" % base_config)
+ValueError: Unexpected base config: Int8WeightOnlyConfig(group_size=32, set_inductor_config=True)

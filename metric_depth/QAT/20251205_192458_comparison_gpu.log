@@ -1,0 +1,58 @@
+xFormers not available
+xFormers not available
+[2025-12-05 19:25:02,031][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 19:25:02,032][    INFO] Using "cuda"
+[2025-12-05 19:25:09,925][    INFO] Estimate latency of checkpoint with same input
+[2025-12-05 19:25:09,926][    INFO] Time per sample (ms): 109.14600891113281 +- 0.7080428251133741
+[2025-12-05 19:25:10,022][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 19:25:17,570][    INFO] Estimate latency of quantized1 with same input
+[2025-12-05 19:25:17,570][    INFO] Time per sample (ms): 136.8943194580078 +- 1.2969634023111778
+[2025-12-05 19:25:17,624][    INFO] Size (quantized1): 40.86 MB
+[2025-12-05 19:25:25,195][    INFO] Estimate latency of quantized2 with same input
+[2025-12-05 19:25:25,195][    INFO] Time per sample (ms): 137.85223205566408 +- 0.8689532771104571
+[2025-12-05 19:25:25,243][    INFO] Size (quantized2): 36.88 MB
+[2025-12-05 19:25:25,247][    INFO] Testing metric_checkpoint model
+
+
+
+[2025-12-05 19:25:27,846][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:25:27,847][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:25:27,847][    INFO]  
+[2025-12-05 19:25:27,847][    INFO] ==================================================================================================
+[2025-12-05 19:25:27,847][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:25:27,847][    INFO]    0.998,    1.000,    1.000,    0.032,    0.011,    0.264,    0.043,    0.014,    0.039,   53.847
+[2025-12-05 19:25:27,847][    INFO] ==================================================================================================
+[2025-12-05 19:25:27,848][    INFO] Testing int4_gs32 model
+
+
+[2025-12-05 19:25:30,781][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:25:30,781][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:25:30,781][    INFO]  
+[2025-12-05 19:25:30,781][    INFO] ==================================================================================================
+[2025-12-05 19:25:30,781][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:25:30,781][    INFO]    0.987,    1.000,    1.000,    0.057,    0.031,    0.437,    0.069,    0.024,    0.061,   64.476
+[2025-12-05 19:25:30,781][    INFO] ==================================================================================================
+[2025-12-05 19:25:30,782][    INFO] Testing int4_gs128 model
+
+
+[2025-12-05 19:25:33,733][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:25:33,733][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:25:33,733][    INFO]  
+[2025-12-05 19:25:33,734][    INFO] ==================================================================================================
+[2025-12-05 19:25:33,734][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:25:33,734][    INFO]    0.993,    1.000,    1.000,    0.047,    0.021,    0.359,    0.059,    0.020,    0.053,   65.028
+[2025-12-05 19:25:33,734][    INFO] ==================================================================================================
+[2025-12-05 19:25:33,734][    INFO] End of program
+
+

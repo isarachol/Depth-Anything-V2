@@ -1,0 +1,21 @@
+xFormers not available
+xFormers not available
+[2025-12-05 19:23:14,573][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 19:23:14,574][    INFO] Using "cuda"
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 492, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 417, in main
+    testset = Hypersim('dataset/splits/HyperSim/test.txt', 'test', size=size)
+UnboundLocalError: local variable 'size' referenced before assignment

@@ -1,0 +1,33 @@
+xFormers not available
+xFormers not available
+[2025-12-05 19:23:57,338][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 19:23:57,340][    INFO] Using "cuda"
+[2025-12-05 19:24:05,225][    INFO] Estimate latency of checkpoint with same input
+[2025-12-05 19:24:05,225][    INFO] Time per sample (ms): 108.9139712524414 +- 0.7320406516006
+[2025-12-05 19:24:05,304][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 19:24:12,811][    INFO] Estimate latency of quantized1 with same input
+[2025-12-05 19:24:12,811][    INFO] Time per sample (ms): 136.18114562988282 +- 1.1610097515255589
+[2025-12-05 19:24:12,862][    INFO] Size (quantized1): 40.86 MB
+[2025-12-05 19:24:20,382][    INFO] Estimate latency of quantized2 with same input
+[2025-12-05 19:24:20,382][    INFO] Time per sample (ms): 136.88465454101564 +- 1.2619554841240264
+[2025-12-05 19:24:20,428][    INFO] Size (quantized2): 36.88 MB
+
+
+
+Traceback (most recent call last):
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 493, in <module>
+    main()
+  File "/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/qat.py", line 486, in main
+    _ = test(checkpoint, testloader, "metric_checkpoint", limit=test_lim) # averaged --> quality + time
+UnboundLocalError: local variable 'test_lim' referenced before assignment

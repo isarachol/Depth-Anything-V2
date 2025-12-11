@@ -40,7 +40,7 @@ parser.add_argument('--max-depth', type=float, default=20)
 parser.add_argument('--min-depth', default=0.001, type=float)
 parser.add_argument('--dataset', default='HyperSim', choices=['hypersim', 'vkitti', 'HyperSim'])
 parser.add_argument('--img-size', default=518, type=int)
-parser.add_argument('--save-path', type=str, default='./QAT')
+parser.add_argument('--save-path', type=str, default='./QAT/int8weightonly')
 parser.add_argument('--bs', default=1, type=int) # ========================= CHANGE to 128 ====================================
 parser.add_argument('--epochs', default=1, type=int) # change to 120
 parser.add_argument('--lr', default=0.000005, type=float)
@@ -265,6 +265,7 @@ def test(model, testloader, model_name, limit=None):
     function for evaluating performance of a model
     """
 
+    model.eval()
     logger.info(f'Testing {model_name} model')
     results = eval_depth(None, None, True)
     results['time'] = torch.tensor([0.0]).to(DEVICE) # assume no cuda
@@ -356,23 +357,23 @@ def main():
         # ===================================================================================
         # QUANTIZATION AWARE TRAINING
         # ===================================================================================
-        from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig
+        from torchao.quantization import quantize_, Int4WeightOnlyConfig
         from torchao.quantization.qat import QATConfig
 
         # prepare: swap `torch.nn.Linear` -> `FakeQuantizedLinear`
-        base_config = Int8DynamicActivationInt4WeightConfig(group_size=128)
+        base_config = Int4WeightOnlyConfig(group_size=32)
         quantize_(depth_anything1, QATConfig(base_config, step="prepare"))
 
         # fine-tune --> fake quantization
         train_loop(depth_anything1, trainloader, valloader)
         finetuned1 = depth_anything1
-        torch.save(finetuned1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v2.pth'))
+        torch.save(finetuned1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_finetuned_v3.pth'))
         print_size_of_model(depth_anything1, "finetuned")
         _ = test(finetuned1, testloader, "metric_finetuned", limit=test_lim)
 
         # convert: swap `FakeQuantizedLinear` -> `torch.nn.Linear`, then quantize using `base_config`
         quantize_(depth_anything1, QATConfig(base_config, step="convert"))
-        torch.save(depth_anything1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v2.pth'))
+        torch.save(depth_anything1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v3.pth'))
 
         print_size_of_model(depth_anything1, "quantized")
         _ = test(depth_anything1, testloader, "quantized", limit=test_lim) # averaged --> quality + time
@@ -402,12 +403,22 @@ def main():
         depth_anything1 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
         finetuned2 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
         depth_anything2 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        # finetuned3 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
+        # depth_anything3 = DepthAnythingV2(**{**model_configs['vits'], 'max_depth': args.max_depth})
 
         metric_cp_path = '/home/tand/Documents/class/cs523/project/depth_anything_v2/Depth-Anything-V2/metric_depth/checkpoints/depth_anything_v2_metric_hypersim_vits.pth'
         finetuned1_path = 'QAT/int8_group32/vits_HyperSim_finetuned_v1.pth'
         quantized1_path = 'QAT/int8_group32/vits_HyperSim_quantized_int8_v1.pth'
         finetuned2_path = 'QAT/int8_group128/vits_HyperSim_finetuned_v2.pth'
         quantized2_path = 'QAT/int8_group128/vits_HyperSim_quantized_int8_v2.pth'
+        # finetuned3_path = 'QAT/int4weightonly/vits_HyperSim_finetuned_v3.pth'
+
+        size = (args.img_size, args.img_size)
+        if args.dataset == 'HyperSim': # Isara: repeat training with subset of HyperSim
+            testset = Hypersim('dataset/splits/HyperSim/test.txt', 'test', size=size)
+        else:
+            raise NotImplementedError
+        testloader = DataLoader(testset, batch_size=args.bs, pin_memory=True, num_workers=4, drop_last=True)
 
         import torchao
         torch.serialization.add_safe_globals([torchao.quantization.linear_activation_quantized_tensor.LinearActivationQuantizedTensor])
@@ -416,31 +427,48 @@ def main():
         quantized1_state = torch.load(quantized1_path, map_location='cpu')
         finetuned2_state = torch.load(finetuned2_path, map_location='cpu')
         quantized2_state = torch.load(quantized2_path, map_location='cpu')
+        # finetuned3_state = torch.load(finetuned3_path, map_location='cpu')
+        # quantized3_state = torch.load(quantized3_path, map_location='cpu')
 
         checkpoint.load_state_dict(metric_cp_state)
         finetuned1.load_state_dict(finetuned1_state)
         depth_anything1.load_state_dict(finetuned1_state)
         finetuned2.load_state_dict(finetuned2_state)
         depth_anything2.load_state_dict(finetuned2_state)
+        # finetuned3.load_state_dict(finetuned3_state)
+        # depth_anything3.load_state_dict(finetuned3_state)
 
-        from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig
+        # finetuned3.to(DEVICE)
+        # depth_anything3.to(DEVICE)
+        # depth_anything3.to(torch.float32)
+        # for p in depth_anything3.parameters():
+        #     p.data = p.data.float()
+        # for b in depth_anything3.buffers():
+        #     b.data = b.data.float()
+
+        from torchao.quantization import quantize_, Int8DynamicActivationInt4WeightConfig, Int4WeightOnlyConfig
         from torchao.quantization.qat import QATConfig
 
         base_config1 = Int8DynamicActivationInt4WeightConfig(group_size=32)
         base_config2 = Int8DynamicActivationInt4WeightConfig(group_size=128)
+        # base_config3 = Int4WeightOnlyConfig(group_size=32)
         quantize_(depth_anything1, QATConfig(base_config1, step="prepare"))
         quantize_(depth_anything1, QATConfig(base_config1, step="convert"))
         quantize_(depth_anything2, QATConfig(base_config2, step="prepare"))
         quantize_(depth_anything2, QATConfig(base_config2, step="convert"))
+        # quantize_(depth_anything3, QATConfig(base_config3, step="prepare"))
+        # quantize_(depth_anything3, QATConfig(base_config3, step="convert"))
+        # torch.save(depth_anything1.state_dict(), os.path.join(args.save_path, f'{args.encoder}_{args.dataset}_quantized_int8_v3.pth'))
 
-        depth_anything1.load_state_dict(quantized1_state)
-        depth_anything2.load_state_dict(quantized2_state)
+        # depth_anything1.load_state_dict(quantized1_state)
+        # depth_anything2.load_state_dict(quantized2_state)
+        # depth_anything3.load_state_dict(quantized3_state)
 
 
         checkpoint.to(DEVICE).eval()
-        finetuned1.to(DEVICE).eval()
+        # finetuned1.to(DEVICE).eval()
         depth_anything1.to(DEVICE).eval()
-        finetuned2.to(DEVICE).eval()
+        # finetuned2.to(DEVICE).eval()
         depth_anything2.to(DEVICE).eval()
 
         # ===================================================================================
@@ -450,10 +478,17 @@ def main():
         example_input = torch.rand(2, 3, 518, 686).to(DEVICE).float()
 
         estimate_latency(checkpoint, example_input, "checkpoint", repetitions=50)
-        estimate_latency(finetuned1, example_input, "finetuned1", repetitions=50)
+        # estimate_latency(finetuned1, example_input, "finetuned1", repetitions=50)
         estimate_latency(depth_anything1, example_input, "quantized1", repetitions=50)
-        estimate_latency(finetuned2, example_input, "finetuned2", repetitions=50)
+        # estimate_latency(finetuned2, example_input, "finetuned2", repetitions=50)
         estimate_latency(depth_anything2, example_input, "quantized2", repetitions=50)
+
+        _ = test(checkpoint, testloader, "metric_checkpoint") # averaged --> quality + time
+        print_size_of_model(checkpoint, tag="checkpoint")
+        _ = test(depth_anything1, testloader, "int4_gs32") # averaged --> quality + time
+        print_size_of_model(depth_anything1, tag="int4_gs32")
+        _ = test(depth_anything2, testloader, "int4_gs128") # averaged --> quality + time
+        print_size_of_model(depth_anything2, tag="int4_gs128")
         logger.info("End of program")
 
 

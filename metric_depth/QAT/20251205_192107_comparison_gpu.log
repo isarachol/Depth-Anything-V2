@@ -1,0 +1,28 @@
+xFormers not available
+xFormers not available
+[2025-12-05 19:21:10,821][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 19:21:10,823][    INFO] Using "cuda"
+[2025-12-05 19:21:19,138][    INFO] Estimate latency of checkpoint with same input
+[2025-12-05 19:21:19,138][    INFO] Time per sample (ms): 109.71697158813477 +- 1.1179096469817777
+[2025-12-05 19:21:19,217][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 19:21:26,758][    INFO] Estimate latency of quantized1 with same input
+[2025-12-05 19:21:26,759][    INFO] Time per sample (ms): 136.77643798828126 +- 1.2276471416307677
+[2025-12-05 19:21:26,812][    INFO] Size (quantized1): 40.86 MB
+[2025-12-05 19:21:34,373][    INFO] Estimate latency of quantized2 with same input
+[2025-12-05 19:21:34,373][    INFO] Time per sample (ms): 137.55760620117186 +- 1.3182718288354123
+[2025-12-05 19:21:34,424][    INFO] Size (quantized2): 36.88 MB
+[2025-12-05 19:21:34,428][    INFO] End of program
+
+
+

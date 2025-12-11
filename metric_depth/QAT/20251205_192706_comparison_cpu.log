@@ -1,0 +1,63 @@
+xFormers not available
+xFormers not available
+[2025-12-05 19:27:08,087][    INFO] {'bs': 1,
+ 'dataset': 'HyperSim',
+ 'encoder': 'vits',
+ 'epochs': 1,
+ 'img_size': 518,
+ 'lr': 5e-06,
+ 'max_depth': 20,
+ 'min_depth': 0.001,
+ 'ngpus': 0,
+ 'pretrained_from': '../checkpoints/depth_anything_v2_vits.pth',
+ 'save_path': './QAT/int8weightonly'}
+
+[2025-12-05 19:27:08,088][    INFO] Using "cpu"
+[2025-12-05 19:28:18,079][    INFO] Estimate latency of checkpoint with same input
+[2025-12-05 19:28:18,079][    INFO] Time per sample (ms): 1207.4049758911133 +- 54.05663370446123
+[2025-12-05 19:28:18,130][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 19:29:36,602][    INFO] Estimate latency of quantized1 with same input
+[2025-12-05 19:29:36,602][    INFO] Time per sample (ms): 1454.0437316894531 +- 75.29602174240144
+[2025-12-05 19:29:36,638][    INFO] Size (quantized1): 40.86 MB
+[2025-12-05 19:30:46,172][    INFO] Estimate latency of quantized2 with same input
+[2025-12-05 19:30:46,172][    INFO] Time per sample (ms): 1272.667498588562 +- 61.63128404069417
+[2025-12-05 19:30:46,209][    INFO] Size (quantized2): 36.88 MB
+[2025-12-05 19:30:46,214][    INFO] Testing metric_checkpoint model
+/home/tand/miniconda3/envs/cs523/lib/python3.10/site-packages/torch/utils/data/dataloader.py:666: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+
+
+
+[2025-12-05 19:31:09,970][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:31:09,970][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:31:09,970][    INFO]  
+[2025-12-05 19:31:09,971][    INFO] ==================================================================================================
+[2025-12-05 19:31:09,971][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:31:09,971][    INFO]    0.998,    1.000,    1.000,    0.032,    0.011,    0.264,    0.043,    0.014,    0.039,  519.475
+[2025-12-05 19:31:09,971][    INFO] ==================================================================================================
+[2025-12-05 19:31:10,034][    INFO] Size (checkpoint): 99.22 MB
+[2025-12-05 19:31:10,045][    INFO] Testing int4_gs32 model
+
+
+[2025-12-05 19:31:35,009][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:31:35,009][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:31:35,009][    INFO]  
+[2025-12-05 19:31:35,009][    INFO] ==================================================================================================
+[2025-12-05 19:31:35,009][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:31:35,010][    INFO]    0.987,    1.000,    1.000,    0.057,    0.031,    0.439,    0.069,    0.024,    0.062,  603.822
+[2025-12-05 19:31:35,010][    INFO] ==================================================================================================
+[2025-12-05 19:31:35,057][    INFO] Size (int4_gs32): 40.86 MB
+[2025-12-05 19:31:35,062][    INFO] Testing int4_gs128 model
+
+
+[2025-12-05 19:32:01,648][    INFO] Measured over "40" samples of testing data from "HyperSim" dataset
+[2025-12-05 19:32:01,648][    INFO] Time is in ms per sample (only for inference step)
+[2025-12-05 19:32:01,648][    INFO]  
+[2025-12-05 19:32:01,648][    INFO] ==================================================================================================
+[2025-12-05 19:32:01,648][    INFO]       d1,       d2,       d3,  abs_rel,   sq_rel,     rmse, rmse_log,    log10,    silog,     time
+[2025-12-05 19:32:01,648][    INFO]    0.993,    1.000,    1.000,    0.047,    0.021,    0.360,    0.059,    0.020,    0.053,  642.273
+[2025-12-05 19:32:01,648][    INFO] ==================================================================================================
+[2025-12-05 19:32:01,691][    INFO] Size (int4_gs128): 36.88 MB
+[2025-12-05 19:32:01,695][    INFO] End of program
+
+
